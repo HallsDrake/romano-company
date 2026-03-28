@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700&family=Pinyon+Script&family=Playfair+Display:ital,wght@1,400;1,700&display=swap');
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@theme {
+  --color-main: #FFF4D2;
+  --color-surface: #FFFFFF;
+  --color-text-primary: #00393C;
+  --color-text-secondary: rgba(0, 57, 60, 0.65);
+  --color-accent-primary: #FF7B5B;
+  --color-border-subtle: rgba(0, 57, 60, 0.1);
+
+  --font-header: 'Halfre', 'Outfit', sans-serif;
+  --font-body: 'Albert Sans', sans-serif;
+  --font-serif: 'Playfair Display', serif;
+}
+
+@font-face {
+  font-family: 'Halfre';
+  src: url('/assets/Fontes/Halfre.woff2') format('woff2'),
+       url('/assets/Fontes/Halfre.woff') format('woff'),
+       url('/assets/Fontes/Halfre.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  /* Restored Brand Palette - Brisa Reference */
+  --color-cream: #FFF4D2;      /* Main Background */
+  --color-teal: #00393C;       /* Sophisticated Accent / Primary Text */
+  --color-coral: #FF7B5B;      /* Contrast CTA Accent */
+  --color-white: #FFFFFF;
+  --color-border: rgba(0, 57, 60, 0.1); 
+
+  /* Design Tokens */
+  --main-bg: var(--color-cream);
+  --surface-bg: var(--color-white);
+  --text-primary: var(--color-teal);
+  --text-secondary: rgba(0, 57, 60, 0.65);
+  --accent-primary: var(--color-coral);
+  --border-subtle: var(--color-border);
+
+  /* Typography Scale */
+  --font-header: 'Halfre', 'Outfit', sans-serif;
+  --font-body: 'Albert Sans', sans-serif;
+  --font-detail: 'Pinyon Script', cursive; 
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: var(--font-body);
+    background-color: var(--main-bg);
+    color: var(--text-primary);
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-header);
+    font-weight: normal;
+  }
+
+  * {
+    border-color: var(--border-subtle);
+  }
+}
+
+@layer utilities {
+  .noise-bg {
+    /* Temporarily disabled user preferred cleaner look, but we keep the class for fallback */
+    background: transparent;
+  }
+  
+  .text-epic {
+    font-size: clamp(4rem, 10vw, 10rem);
+    line-height: 0.9;
+    letter-spacing: -0.02em;
+  }
+
+  .text-display {
+    font-size: clamp(2.5rem, 6vw, 6rem);
+    line-height: 1;
+    letter-spacing: -0.02em;
+  }
+
+  .font-detail {
+    font-family: var(--font-detail);
+    font-weight: 400;
+  }
+
+  .container-editorial {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+
+  @media (min-width: 1400px) {
+    .container-editorial {
+      padding-right: 4rem;
+      padding-left: 4rem;
+    }
+  }
+}
+
+@layer components {
+  /* Ultra-minimal borderless button */
+  .btn-editorial {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    padding: 1rem 0;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    color: var(--text-primary);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .btn-editorial::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: var(--text-primary);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  
+  .btn-editorial:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  
+  .btn-premium {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    transition: all 300ms ease;
+    background-color: var(--accent-primary);
+    color: #FFFFFF;
+    padding: 1.25rem 3rem;
+    font-size: 0.75rem;
+    border: none;
+    box-shadow: 0 4px 14px rgba(255, 123, 91, 0.25);
+  }
+  
+  .btn-premium:hover {
+    transform: translateY(-2px);
+    background-color: var(--text-primary);
+    box-shadow: 0 6px 20px rgba(0, 57, 60, 0.2);
+  }
+}

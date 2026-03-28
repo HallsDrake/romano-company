@@ -1,0 +1,39 @@
+{
+  "colors": {
+    "background": "#FFF5D3",
+    "surface": "#FFFFFF",
+    "text-primary": "#00393C",
+    "text-secondary": "#005656",
+    "accent": "#FF7B5B",
+    "accent-hover": "#e66e51",
+    "border": "#00565620"
+  },
+  "typography": {
+    "heading-font": "Halfre, sans-serif",
+    "body-font": "Albert Sans, sans-serif",
+    "detail-font": "Hereditary, cursive",
+    "scale": {
+      "xs": "0.75rem",
+      "sm": "0.875rem",
+      "base": "1rem",
+      "lg": "1.125rem",
+      "xl": "1.25rem",
+      "2xl": "1.5rem",
+      "3xl": "1.875rem",
+      "4xl": "2.25rem",
+      "5xl": "3rem",
+      "6xl": "3.75rem"
+    }
+  },
+  "spacing": {
+    "section": "120px",
+    "container": "1200px",
+    "gutter": "24px"
+  },
+  "radius": {
+    "sm": "4px",
+    "md": "8px",
+    "lg": "16px",
+    "full": "9999px"
+  }
+}
