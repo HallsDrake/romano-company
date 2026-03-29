@@ -40,7 +40,7 @@ const Project = () => {
           />
         </motion.div>
 
-        <div className="relative z-20 text-center max-w-5xl">
+        <div className="relative z-20 text-center max-w-5xl px-4">
           <motion.span
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -53,7 +53,7 @@ const Project = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.7, duration: 1 }}
-            className="text-6xl md:text-8xl lg:text-[10vw] font-header leading-[0.85] tracking-tighter uppercase text-main"
+            className="text-5xl sm:text-7xl md:text-8xl lg:text-[10vw] font-header leading-[0.85] tracking-tighter uppercase text-main"
           >
             {project.title}<span className="text-accent-primary">.</span>
           </motion.h1>
@@ -72,18 +72,18 @@ const Project = () => {
 
       {/* 2. METADATA BAR */}
       <div className="border-y border-border-subtle bg-main">
-        <div className="container-editorial py-8 flex flex-col md:flex-row justify-between items-center gap-6">
-          <div className="flex flex-col">
-            <span className="text-[10px] uppercase tracking-widest font-bold text-text-secondary mb-1">Projeto</span>
-            <span className="font-header text-xl">{project.title}</span>
+        <div className="container-editorial py-12 flex flex-col md:flex-row justify-between items-center text-center md:text-left gap-12 md:gap-6">
+          <div className="flex flex-col items-center md:items-start w-full md:w-auto">
+            <span className="text-[10px] uppercase tracking-[0.3em] font-bold text-text-secondary opacity-50 mb-2">Projeto</span>
+            <span className="font-header text-2xl md:text-xl uppercase tracking-tighter">{project.title}</span>
           </div>
-          <div className="flex flex-col md:text-center">
-            <span className="text-[10px] uppercase tracking-widest font-bold text-text-secondary mb-1">Cliente</span>
-            <span className="font-header text-xl">{project.client}</span>
+          <div className="flex flex-col items-center md:items-center w-full md:w-auto">
+            <span className="text-[10px] uppercase tracking-[0.3em] font-bold text-text-secondary opacity-50 mb-2">Cliente</span>
+            <span className="font-header text-2xl md:text-xl uppercase tracking-tighter">{project.client}</span>
           </div>
-          <div className="flex flex-col md:text-right">
-            <span className="text-[10px] uppercase tracking-widest font-bold text-text-secondary mb-1">Expertise</span>
-            <span className="font-header text-xl">{project.category}</span>
+          <div className="flex flex-col items-center md:items-end w-full md:w-auto">
+            <span className="text-[10px] uppercase tracking-[0.3em] font-bold text-text-secondary opacity-50 mb-2">Expertise</span>
+            <span className="font-header text-2xl md:text-xl uppercase tracking-tighter">{project.category}</span>
           </div>
         </div>
       </div>
@@ -95,7 +95,7 @@ const Project = () => {
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="sticky top-32 text-center lg:text-left"
+            className="lg:sticky lg:top-32 text-center lg:text-left"
           >
             <h2 className="text-[10px] uppercase tracking-[0.4em] font-bold text-accent-primary mb-4">O Desafio</h2>
             <p className="font-serif italic text-3xl text-text-primary leading-tight">
@@ -133,7 +133,7 @@ const Project = () => {
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="sticky top-32 text-center lg:text-left"
+            className="lg:sticky lg:top-32 text-center lg:text-left"
           >
             <h2 className="text-[10px] uppercase tracking-[0.4em] font-bold text-accent-primary mb-4">Estratégia</h2>
             <p className="font-serif italic text-3xl text-text-primary leading-tight">
