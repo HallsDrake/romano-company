@@ -16,7 +16,7 @@ const services = [
     textClass: "text-text-primary",
     borderClass: "border-text-primary/20",
     btnClass: "bg-accent-primary text-white hover:scale-105 shadow-xl rounded-full text-center px-10",
-    image: "/assets/PROJETOS SITE ROMANO COMPANY/FOTOS SITE/1.JPG",
+    image: "/assets/PROJETOS SITE ROMANO COMPANY/FOTOS SITE/1.jpg",
     reverse: false,
     finalCTA: "PRONTO(A) PRA COMEÇAR?"
   },
@@ -34,7 +34,7 @@ const services = [
     textClass: "text-main",
     borderClass: "border-main/20",
     btnClass: "bg-accent-primary text-white hover:scale-105 shadow-xl rounded-full text-center px-10",
-    image: "/assets/PROJETOS SITE ROMANO COMPANY/FOTOS SITE/2.JPG",
+    image: "/assets/PROJETOS SITE ROMANO COMPANY/FOTOS SITE/2.jpg",
     reverse: true,
     finalCTA: "PRONTO(A) PRA COMEÇAR?"
   }

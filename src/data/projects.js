@@ -102,36 +102,36 @@ export const projects = [
   },
   {
     id: "burger-tonhao",
-    title: "BURGER DOS TONHÃO",
+    title: "BURGER DOS TONHÃO",
     category: "Identidade Visual & Experiência",
-    image: "/assets/PROJETOS SITE ROMANO COMPANY/7 - BURGER DOS TONHÃO/1 - CAPA.jpg",
+    image: "/assets/PROJETOS SITE ROMANO COMPANY/7 - BURGER DOS TONHAO/1 - CAPA.jpg",
     client: "Burger dos Tonhão",
     description: "Hambúrguer com alma, humor e o espírito do Nordeste.",
     challenge: "A marca Burger dos Tonhão nasceu da paixão de dois amigos pela cultura nordestina e pelo espírito divertido de sua turma. O desafio era criar uma comunicação moderna que equilibrasse o profissionalismo com um toque de humor, equilibrando autenticidade e energia.",
     strategy: "Refletimos a essência alegre, descontraída e artesanal do projeto em um design que transmite a excelência dos produtos. A identidade visual foi pensada para um público amplo, traduzindo o cuidado e o grande diferencial dos ingredientes selecionados em uma linguagem vibrante.",
     results: "Uma marca que transborda personalidade e proximidade. O Burger dos Tonhão consolidou-se como uma hamburgueria artesanal de alta qualidade, reconhecida pelo cuidado nos detalhes e pela alma carregada de tradição e diversão.",
     gallery: [
-      "/assets/PROJETOS SITE ROMANO COMPANY/7 - BURGER DOS TONHÃO/2.jpg",
-      "/assets/PROJETOS SITE ROMANO COMPANY/7 - BURGER DOS TONHÃO/3.jpg",
-      "/assets/PROJETOS SITE ROMANO COMPANY/7 - BURGER DOS TONHÃO/4.jpg",
-      "/assets/PROJETOS SITE ROMANO COMPANY/7 - BURGER DOS TONHÃO/5.jpg"
+      "/assets/PROJETOS SITE ROMANO COMPANY/7 - BURGER DOS TONHAO/2.jpg",
+      "/assets/PROJETOS SITE ROMANO COMPANY/7 - BURGER DOS TONHAO/3.jpg",
+      "/assets/PROJETOS SITE ROMANO COMPANY/7 - BURGER DOS TONHAO/4.jpg",
+      "/assets/PROJETOS SITE ROMANO COMPANY/7 - BURGER DOS TONHAO/5.jpg"
     ]
   },
   {
     id: "lacos",
-    title: "LAÇOS ESMALTERIA",
+    title: "LAÇOS ESMALTERIA",
     category: "Identidade Visual & Brand Design",
-    image: "/assets/PROJETOS SITE ROMANO COMPANY/8 - LAÇOS ESMALTERIA/1 - CAPA.jpg",
+    image: "/assets/PROJETOS SITE ROMANO COMPANY/8 - LACOS ESMALTERIA/1 - CAPA.jpg",
     client: "Laços Esmalteria",
     description: "Um refúgio de autocuidado onde cada laço conta uma história.",
     challenge: "O desafio da Laços Esmalteria era traduzir delicadeza, acolhimento e feminilidade em uma forma visual equilibrada. A marca precisava conversar com mulheres de todas as idades (10 a 70 anos) que valorizam rituais de cuidado em um espaço onde se sintam especiais.",
     strategy: "O símbolo foi construído a partir de uma linha orgânica contínua que desenha três rostos entrelaçados, representando a união entre as irmãs fundadoras e o significado do nome. Combinamos a elegância clássica da Abhaya Libre com a fluidez moderna da Alan Sans para um visual atemporal.",
     results: "Uma identidade visual que transmite confiança e requinte. A Laços Esmalteria consolidou-se como um salão boutique referência em atenção aos detalhes, onde a marca é o primeiro passo para uma experiência de beleza profunda, sensível e memorável.",
     gallery: [
-      "/assets/PROJETOS SITE ROMANO COMPANY/8 - LAÇOS ESMALTERIA/2.1.jpg",
-      "/assets/PROJETOS SITE ROMANO COMPANY/8 - LAÇOS ESMALTERIA/5.jpg",
-      "/assets/PROJETOS SITE ROMANO COMPANY/8 - LAÇOS ESMALTERIA/8.jpg",
-      "/assets/PROJETOS SITE ROMANO COMPANY/8 - LAÇOS ESMALTERIA/11.jpg"
+      "/assets/PROJETOS SITE ROMANO COMPANY/8 - LACOS ESMALTERIA/2.1.jpg",
+      "/assets/PROJETOS SITE ROMANO COMPANY/8 - LACOS ESMALTERIA/5.jpg",
+      "/assets/PROJETOS SITE ROMANO COMPANY/8 - LACOS ESMALTERIA/8.jpg",
+      "/assets/PROJETOS SITE ROMANO COMPANY/8 - LACOS ESMALTERIA/11.jpg"
     ]
   },
   {
