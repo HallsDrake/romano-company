@@ -22,13 +22,13 @@ const ValuePropLaura = () => {
               </h3>
             </motion.div>
 
-            <div className="grid md:grid-cols-2 gap-16 md:gap-32 text-left border-t border-main/10 pt-16 md:pt-32 items-start">
+            <div className="grid md:grid-cols-2 gap-16 md:gap-32 text-center md:text-left border-t border-main/10 pt-16 md:pt-32 items-start">
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.8, delay: 0.2 }}
-                className="space-y-12 text-2xl md:text-3xl font-header leading-tight text-main/95"
+                className="space-y-12 text-2xl md:text-3xl font-header leading-tight text-main/95 max-w-xl mx-auto md:mx-0"
               >
                 <p className="text-2xl md:text-3xl font-header leading-tight text-main/90">
                   A gente acredita em trabalho feito com cuidado e estratégia, não em soluções rápidas que precisam ser refeitas daqui a seis meses.
@@ -37,8 +37,8 @@ const ValuePropLaura = () => {
                   Marca não é só visual, é fundação. E quem constrói essa base do jeito certo para de correr atrás e começa a ser procurado.
                 </p>
                 
-                <div className="pt-12">
-                   <a href="#portfolio" className="btn-editorial text-main text-[10px] hover:text-accent-primary after:bg-accent-primary lowercase">
+                <div className="pt-12 w-full md:w-auto">
+                   <a href="#portfolio" className="btn-editorial text-main text-[10px] hover:text-accent-primary after:bg-accent-primary lowercase w-full md:w-auto flex items-center justify-center md:block">
                     explore o portfólio
                    </a>
                 </div>
