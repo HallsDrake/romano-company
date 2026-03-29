@@ -12,15 +12,15 @@ export const projects = [
     results: "Uma marca que valoriza a essência acima da aparência, onde o sucesso tem aroma de café e a sofisticação de um espaço que preza pela verdade.",
     gallery: [
       "/assets/PROJETOS SITE ROMANO COMPANY/1 - GRAND COFFEE HOUSE/1.jpg",
+      "/assets/PROJETOS SITE ROMANO COMPANY/1 - GRAND COFFEE HOUSE/13.jpg",
+      "/assets/PROJETOS SITE ROMANO COMPANY/1 - GRAND COFFEE HOUSE/14.jpg",
+      "/assets/PROJETOS SITE ROMANO COMPANY/1 - GRAND COFFEE HOUSE/15.jpg",
+      "/assets/PROJETOS SITE ROMANO COMPANY/1 - GRAND COFFEE HOUSE/16.jpg",
       "/assets/PROJETOS SITE ROMANO COMPANY/1 - GRAND COFFEE HOUSE/2.jpg",
       "/assets/PROJETOS SITE ROMANO COMPANY/1 - GRAND COFFEE HOUSE/3.jpg",
       "/assets/PROJETOS SITE ROMANO COMPANY/1 - GRAND COFFEE HOUSE/4.jpg",
       "/assets/PROJETOS SITE ROMANO COMPANY/1 - GRAND COFFEE HOUSE/5.jpg",
       "/assets/PROJETOS SITE ROMANO COMPANY/1 - GRAND COFFEE HOUSE/6.jpg",
-      "/assets/PROJETOS SITE ROMANO COMPANY/1 - GRAND COFFEE HOUSE/13.jpg",
-      "/assets/PROJETOS SITE ROMANO COMPANY/1 - GRAND COFFEE HOUSE/14.jpg",
-      "/assets/PROJETOS SITE ROMANO COMPANY/1 - GRAND COFFEE HOUSE/15.jpg",
-      "/assets/PROJETOS SITE ROMANO COMPANY/1 - GRAND COFFEE HOUSE/16.jpg",
       "/assets/PROJETOS SITE ROMANO COMPANY/1 - GRAND COFFEE HOUSE/Prancheta 12@4x-8.jpg"
     ]
   },
@@ -36,6 +36,8 @@ export const projects = [
     strategy: "Desenvolvemos um contraste intencional entre o artístico e o funcional. Utilizamos a tipografia Timberline para conferir charme artesanal, equilibrada pela sobriedade da Work Sans. A paleta, inspirada no amadurecimento do vinho, traz tons profundos e aveludados equilibrados com o calor do dourado e laranja.",
     results: "O resultado é uma marca que impõe presença. Uma composição cromática harmoniosa que traduz o Royale como um refúgio de luxo sensorial, convida à imersão e celebra as coisas feitas com alma.",
     gallery: [
+      "/assets/PROJETOS SITE ROMANO COMPANY/2 - ROYALE GASTROBAR/11.jpg",
+      "/assets/PROJETOS SITE ROMANO COMPANY/2 - ROYALE GASTROBAR/12.jpg",
       "/assets/PROJETOS SITE ROMANO COMPANY/2 - ROYALE GASTROBAR/2.jpg",
       "/assets/PROJETOS SITE ROMANO COMPANY/2 - ROYALE GASTROBAR/3.jpg",
       "/assets/PROJETOS SITE ROMANO COMPANY/2 - ROYALE GASTROBAR/4.jpg",
@@ -43,8 +45,6 @@ export const projects = [
       "/assets/PROJETOS SITE ROMANO COMPANY/2 - ROYALE GASTROBAR/6.jpg",
       "/assets/PROJETOS SITE ROMANO COMPANY/2 - ROYALE GASTROBAR/7.jpg",
       "/assets/PROJETOS SITE ROMANO COMPANY/2 - ROYALE GASTROBAR/8.jpg",
-      "/assets/PROJETOS SITE ROMANO COMPANY/2 - ROYALE GASTROBAR/11.jpg",
-      "/assets/PROJETOS SITE ROMANO COMPANY/2 - ROYALE GASTROBAR/12.jpg",
       "/assets/PROJETOS SITE ROMANO COMPANY/2 - ROYALE GASTROBAR/Frame 18.jpg",
       "/assets/PROJETOS SITE ROMANO COMPANY/2 - ROYALE GASTROBAR/POST 1 1.jpg",
       "/assets/PROJETOS SITE ROMANO COMPANY/2 - ROYALE GASTROBAR/POST 4 1.jpg",
@@ -63,11 +63,6 @@ export const projects = [
     strategy: "A marca nasce como um farol sensorial. Utilizamos a tipografia Chicago para conferir curvas sofisticadas e artísticas, equilibrada pela Nunito Sans no corpo. O logotipo traz um traço minimalista de peixe com o kanji '灯り', reforçando o respeito à tradição nipônica com modernidade.",
     results: "Uma experiência onde o sabor é protagonista e o ambiente um refúgio de serenidade e elegância minimalista. O Akari Sushi Bar hoje se destaca por seguir caminhos únicos, traduzindo hospitalidade e contemporaneidade de forma singular.",
     gallery: [
-      "/assets/PROJETOS SITE ROMANO COMPANY/3 - AKARI SUSHI/2.jpg",
-      "/assets/PROJETOS SITE ROMANO COMPANY/3 - AKARI SUSHI/4.jpg",
-      "/assets/PROJETOS SITE ROMANO COMPANY/3 - AKARI SUSHI/5.jpg",
-      "/assets/PROJETOS SITE ROMANO COMPANY/3 - AKARI SUSHI/6.jpg",
-      "/assets/PROJETOS SITE ROMANO COMPANY/3 - AKARI SUSHI/9.jpg",
       "/assets/PROJETOS SITE ROMANO COMPANY/3 - AKARI SUSHI/10.jpg",
       "/assets/PROJETOS SITE ROMANO COMPANY/3 - AKARI SUSHI/12 - drink.jpg",
       "/assets/PROJETOS SITE ROMANO COMPANY/3 - AKARI SUSHI/13.jpg",
@@ -75,7 +70,12 @@ export const projects = [
       "/assets/PROJETOS SITE ROMANO COMPANY/3 - AKARI SUSHI/16.jpg",
       "/assets/PROJETOS SITE ROMANO COMPANY/3 - AKARI SUSHI/18.jpg",
       "/assets/PROJETOS SITE ROMANO COMPANY/3 - AKARI SUSHI/19.jpg",
-      "/assets/PROJETOS SITE ROMANO COMPANY/3 - AKARI SUSHI/30.jpg"
+      "/assets/PROJETOS SITE ROMANO COMPANY/3 - AKARI SUSHI/2.jpg",
+      "/assets/PROJETOS SITE ROMANO COMPANY/3 - AKARI SUSHI/30.jpg",
+      "/assets/PROJETOS SITE ROMANO COMPANY/3 - AKARI SUSHI/4.jpg",
+      "/assets/PROJETOS SITE ROMANO COMPANY/3 - AKARI SUSHI/5.jpg",
+      "/assets/PROJETOS SITE ROMANO COMPANY/3 - AKARI SUSHI/6.jpg",
+      "/assets/PROJETOS SITE ROMANO COMPANY/3 - AKARI SUSHI/9.jpg"
     ]
   },
   {
@@ -90,9 +90,6 @@ export const projects = [
     strategy: "O símbolo nasce da fusão entre a folha e o vento, evocando o movimento da água e a imponência das montanhas. Unimos a elegância atemporal da tipografia CS Century nos títulos à fluidez da Darker Grotesque no corpo, equilibrada por uma paleta que une o Esmeralda (serenidade) ao Bordô (luxo).",
     results: "Uma marca que convida a sentir, desacelerar e viver o presente. O projeto de identidade visual traduz sofisticação e experiências únicas, consolidando o Aivora como um refúgio de luxo silencioso onde natureza e requinte coexistem em perfeita harmonia.",
     gallery: [
-      "/assets/PROJETOS SITE ROMANO COMPANY/4 - AIVORA/3.jpg",
-      "/assets/PROJETOS SITE ROMANO COMPANY/4 - AIVORA/4.jpg",
-      "/assets/PROJETOS SITE ROMANO COMPANY/4 - AIVORA/7.jpg",
       "/assets/PROJETOS SITE ROMANO COMPANY/4 - AIVORA/11.jpg",
       "/assets/PROJETOS SITE ROMANO COMPANY/4 - AIVORA/12.jpg",
       "/assets/PROJETOS SITE ROMANO COMPANY/4 - AIVORA/14.jpg",
@@ -103,7 +100,10 @@ export const projects = [
       "/assets/PROJETOS SITE ROMANO COMPANY/4 - AIVORA/25.jpg",
       "/assets/PROJETOS SITE ROMANO COMPANY/4 - AIVORA/27.jpg",
       "/assets/PROJETOS SITE ROMANO COMPANY/4 - AIVORA/29.jpg",
-      "/assets/PROJETOS SITE ROMANO COMPANY/4 - AIVORA/31.jpg"
+      "/assets/PROJETOS SITE ROMANO COMPANY/4 - AIVORA/3.jpg",
+      "/assets/PROJETOS SITE ROMANO COMPANY/4 - AIVORA/31.jpg",
+      "/assets/PROJETOS SITE ROMANO COMPANY/4 - AIVORA/4.jpg",
+      "/assets/PROJETOS SITE ROMANO COMPANY/4 - AIVORA/7.jpg"
     ]
   },
   {
@@ -119,20 +119,20 @@ export const projects = [
     results: "Uma marca que une estética, significado e exclusividade. O resultado é uma experiência sensorial e acolhedora que reflete beleza, delicadeza e uma presença marcante em cada detalhe.",
     gallery: [
       "/assets/PROJETOS SITE ROMANO COMPANY/5 - ELLURE/1.jpg",
-      "/assets/PROJETOS SITE ROMANO COMPANY/5 - ELLURE/4.jpg",
-      "/assets/PROJETOS SITE ROMANO COMPANY/5 - ELLURE/6.jpg",
-      "/assets/PROJETOS SITE ROMANO COMPANY/5 - ELLURE/7.jpg",
-      "/assets/PROJETOS SITE ROMANO COMPANY/5 - ELLURE/8.jpg",
-      "/assets/PROJETOS SITE ROMANO COMPANY/5 - ELLURE/9.jpg",
       "/assets/PROJETOS SITE ROMANO COMPANY/5 - ELLURE/11.jpg",
+      "/assets/PROJETOS SITE ROMANO COMPANY/5 - ELLURE/123.jpg",
+      "/assets/PROJETOS SITE ROMANO COMPANY/5 - ELLURE/1234.jpg",
       "/assets/PROJETOS SITE ROMANO COMPANY/5 - ELLURE/14.jpg",
       "/assets/PROJETOS SITE ROMANO COMPANY/5 - ELLURE/15.jpg",
       "/assets/PROJETOS SITE ROMANO COMPANY/5 - ELLURE/16.jpg",
       "/assets/PROJETOS SITE ROMANO COMPANY/5 - ELLURE/17.jpg",
       "/assets/PROJETOS SITE ROMANO COMPANY/5 - ELLURE/18.jpg",
       "/assets/PROJETOS SITE ROMANO COMPANY/5 - ELLURE/19.jpg",
-      "/assets/PROJETOS SITE ROMANO COMPANY/5 - ELLURE/123.jpg",
-      "/assets/PROJETOS SITE ROMANO COMPANY/5 - ELLURE/1234.jpg"
+      "/assets/PROJETOS SITE ROMANO COMPANY/5 - ELLURE/4.jpg",
+      "/assets/PROJETOS SITE ROMANO COMPANY/5 - ELLURE/6.jpg",
+      "/assets/PROJETOS SITE ROMANO COMPANY/5 - ELLURE/7.jpg",
+      "/assets/PROJETOS SITE ROMANO COMPANY/5 - ELLURE/8.jpg",
+      "/assets/PROJETOS SITE ROMANO COMPANY/5 - ELLURE/9.jpg"
     ]
   },
   {
@@ -148,19 +148,19 @@ export const projects = [
     results: "Uma identidade que traduz o verdadeiro espírito da Bloom: lifestyle moderno, conectado e cheio de personalidade. Um lugar onde cada detalhe reflete a intensidade da vida noturna e da cultura jovem.",
     gallery: [
       "/assets/PROJETOS SITE ROMANO COMPANY/6 - BLOOM PIZZARIA/1.jpg",
-      "/assets/PROJETOS SITE ROMANO COMPANY/6 - BLOOM PIZZARIA/2.2.jpg",
-      "/assets/PROJETOS SITE ROMANO COMPANY/6 - BLOOM PIZZARIA/3.jpg",
-      "/assets/PROJETOS SITE ROMANO COMPANY/6 - BLOOM PIZZARIA/4.jpg",
-      "/assets/PROJETOS SITE ROMANO COMPANY/6 - BLOOM PIZZARIA/7.jpg",
-      "/assets/PROJETOS SITE ROMANO COMPANY/6 - BLOOM PIZZARIA/8.jpg",
       "/assets/PROJETOS SITE ROMANO COMPANY/6 - BLOOM PIZZARIA/13.jpg",
       "/assets/PROJETOS SITE ROMANO COMPANY/6 - BLOOM PIZZARIA/15.jpg",
       "/assets/PROJETOS SITE ROMANO COMPANY/6 - BLOOM PIZZARIA/16.jpg",
       "/assets/PROJETOS SITE ROMANO COMPANY/6 - BLOOM PIZZARIA/17.jpg",
       "/assets/PROJETOS SITE ROMANO COMPANY/6 - BLOOM PIZZARIA/18.jpg",
       "/assets/PROJETOS SITE ROMANO COMPANY/6 - BLOOM PIZZARIA/19.jpg",
+      "/assets/PROJETOS SITE ROMANO COMPANY/6 - BLOOM PIZZARIA/2.2.jpg",
       "/assets/PROJETOS SITE ROMANO COMPANY/6 - BLOOM PIZZARIA/20.jpg",
-      "/assets/PROJETOS SITE ROMANO COMPANY/6 - BLOOM PIZZARIA/21.jpg"
+      "/assets/PROJETOS SITE ROMANO COMPANY/6 - BLOOM PIZZARIA/21.jpg",
+      "/assets/PROJETOS SITE ROMANO COMPANY/6 - BLOOM PIZZARIA/3.jpg",
+      "/assets/PROJETOS SITE ROMANO COMPANY/6 - BLOOM PIZZARIA/4.jpg",
+      "/assets/PROJETOS SITE ROMANO COMPANY/6 - BLOOM PIZZARIA/7.jpg",
+      "/assets/PROJETOS SITE ROMANO COMPANY/6 - BLOOM PIZZARIA/8.jpg"
     ]
   },
   {
@@ -196,14 +196,14 @@ export const projects = [
     results: "Uma identidade visual que transmite confiança e requinte. A Laços Esmalteria consolidou-se como um salão boutique referência em atenção aos detalhes, onde a marca é o primeiro passo para uma experiência de beleza profunda, sensível e memorável.",
     gallery: [
       "/assets/PROJETOS SITE ROMANO COMPANY/8 - LACOS ESMALTERIA/1.jpg",
-      "/assets/PROJETOS SITE ROMANO COMPANY/8 - LACOS ESMALTERIA/2.1.jpg",
-      "/assets/PROJETOS SITE ROMANO COMPANY/8 - LACOS ESMALTERIA/5.jpg",
-      "/assets/PROJETOS SITE ROMANO COMPANY/8 - LACOS ESMALTERIA/8.jpg",
-      "/assets/PROJETOS SITE ROMANO COMPANY/8 - LACOS ESMALTERIA/9.jpg",
       "/assets/PROJETOS SITE ROMANO COMPANY/8 - LACOS ESMALTERIA/10.1.jpg",
       "/assets/PROJETOS SITE ROMANO COMPANY/8 - LACOS ESMALTERIA/11.jpg",
       "/assets/PROJETOS SITE ROMANO COMPANY/8 - LACOS ESMALTERIA/12.jpg",
-      "/assets/PROJETOS SITE ROMANO COMPANY/8 - LACOS ESMALTERIA/13.jpg"
+      "/assets/PROJETOS SITE ROMANO COMPANY/8 - LACOS ESMALTERIA/13.jpg",
+      "/assets/PROJETOS SITE ROMANO COMPANY/8 - LACOS ESMALTERIA/2.1.jpg",
+      "/assets/PROJETOS SITE ROMANO COMPANY/8 - LACOS ESMALTERIA/5.jpg",
+      "/assets/PROJETOS SITE ROMANO COMPANY/8 - LACOS ESMALTERIA/8.jpg",
+      "/assets/PROJETOS SITE ROMANO COMPANY/8 - LACOS ESMALTERIA/9.jpg"
     ]
   },
   {
@@ -218,14 +218,14 @@ export const projects = [
     strategy: "O logotipo equilibra tecnologia e precisão, partindo de um 'C' estilizado que remete a ondas eletromagnéticas (ressonância e ultrassom). Utilizamos a tipografia Erstoria para conferir modernidade e sofisticação, acompanhada de uma paleta neutra que comunica maturidade e rigor acadêmico.",
     results: "Uma marca que impõe respeito no ambiente digital e acadêmico. A Imaging Academy agora possui uma presença sólida e coerente, servindo como um pilar para a projeção nacional da plataforma de ensino e consolidando Clarissa como uma educadora de alto nível.",
     gallery: [
-      "/assets/PROJETOS SITE ROMANO COMPANY/9 - IMAGING ACADEMY/6 1.jpg",
-      "/assets/PROJETOS SITE ROMANO COMPANY/9 - IMAGING ACADEMY/8.jpg",
-      "/assets/PROJETOS SITE ROMANO COMPANY/9 - IMAGING ACADEMY/9.jpg",
       "/assets/PROJETOS SITE ROMANO COMPANY/9 - IMAGING ACADEMY/10 1.jpg",
       "/assets/PROJETOS SITE ROMANO COMPANY/9 - IMAGING ACADEMY/11.jpg",
       "/assets/PROJETOS SITE ROMANO COMPANY/9 - IMAGING ACADEMY/12.jpg",
       "/assets/PROJETOS SITE ROMANO COMPANY/9 - IMAGING ACADEMY/13.jpg",
       "/assets/PROJETOS SITE ROMANO COMPANY/9 - IMAGING ACADEMY/14.jpg",
+      "/assets/PROJETOS SITE ROMANO COMPANY/9 - IMAGING ACADEMY/6 1.jpg",
+      "/assets/PROJETOS SITE ROMANO COMPANY/9 - IMAGING ACADEMY/8.jpg",
+      "/assets/PROJETOS SITE ROMANO COMPANY/9 - IMAGING ACADEMY/9.jpg",
       "/assets/PROJETOS SITE ROMANO COMPANY/9 - IMAGING ACADEMY/Frame 10.jpg"
     ]
   }
