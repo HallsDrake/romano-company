@@ -41,14 +41,6 @@ const Project = () => {
         </motion.div>
 
         <div className="relative z-20 text-center max-w-5xl px-4">
-          <motion.span
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.5, duration: 0.8 }}
-            className="inline-block text-[10px] md:text-xs font-bold uppercase tracking-[0.4em] text-accent-primary mb-6"
-          >
-            {project.category}
-          </motion.span>
           <motion.h1 
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -214,11 +206,11 @@ const Project = () => {
       </section>
 
       {/* 9. NEXT PROJECT CTA */}
-      <section className="py-32 bg-main text-center border-t border-border-subtle">
+      <section className="py-24 md:py-32 bg-main text-center border-t border-border-subtle">
         <span className="text-[10px] uppercase tracking-widest font-bold text-text-secondary mb-4 block">Próximo Caso</span>
         <Link 
           to="/#portfolio" 
-          className="text-5xl md:text-8xl font-header uppercase tracking-tighter hover:text-accent-primary transition-colors"
+          className="text-3xl sm:text-5xl md:text-8xl font-header uppercase tracking-tighter hover:text-accent-primary transition-colors block px-4"
         >
           EXPLORAR PORTFÓLIO
         </Link>
