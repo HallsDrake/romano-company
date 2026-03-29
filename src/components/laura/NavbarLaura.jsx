@@ -37,8 +37,6 @@ const NavbarLaura = () => {
             <a href="/#servicos" className="hover:text-accent-primary transition-colors">Serviços</a>
           </div>
 
-          {/* Minimalist center anchor/dot */}
-          <div className={`w-1.5 h-1.5 rounded-full ${scrolled ? 'bg-accent-primary' : 'bg-text-primary opacity-50'}`} />
 
           <div className={`flex gap-10 ${scrolled ? 'text-text-primary/70' : 'text-text-primary'}`}>
             <a href="/#sobre" className="hover:text-accent-primary transition-colors">Manifesto</a>
@@ -54,7 +52,7 @@ const NavbarLaura = () => {
           </a>
 
           <a href="/#contato" className={`py-2.5 px-6 text-[9px] uppercase font-bold tracking-[0.2em] rounded-[30px] transition-all duration-300 ${scrolled ? 'btn-premium' : 'btn-premium shadow-2xl hover:scale-105'}`}>
-            INICIAR PROJETO
+            VAMOS CONVERSAR
           </a>
         </div>
 
@@ -108,7 +106,7 @@ const NavbarLaura = () => {
               className="absolute bottom-10 left-10 right-10 flex flex-col gap-6 text-center border-t border-border-subtle pt-6"
             >
               <a href="/#contato" onClick={() => setMenuOpen(false)} className="btn-premium w-full flex items-center justify-center">
-                INICIAR PROJETO
+                VAMOS CONVERSAR
               </a>
               <a href="https://instagram.com/romanolaurah" className="text-[10px] uppercase tracking-widest font-bold text-text-secondary w-full">
                 Siga no Instagram

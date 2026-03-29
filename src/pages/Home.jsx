@@ -6,7 +6,6 @@ import ServicosLaura from '../components/laura/ServicosLaura';
 import ValuePropLaura from '../components/laura/ValuePropLaura';
 import AboutLaura from '../components/laura/AboutLaura';
 import FooterLaura from '../components/laura/FooterLaura';
-import TickerLaura from '../components/laura/TickerLaura';
 
 const Home = () => {
   return (
@@ -19,7 +18,6 @@ const Home = () => {
         <ValuePropLaura />
         <AboutLaura />
       </main>
-      <TickerLaura />
       <FooterLaura />
     </div>
   );

@@ -11,14 +11,14 @@ const FooterLaura = () => {
           
           <div className="max-w-md">
             <span className="inline-block px-4 py-1.5 rounded-full border border-main/20 text-[10px] font-bold uppercase tracking-[0.3em] mb-8 text-main/80">
-              O PRÓXIMO PASSO
+              ROMANO COMPANY
             </span>
             <p className="font-header text-3xl leading-[1.2] text-main/90 mb-12">
-              Marcas históricas não acontecem por <span className="font-serif italic text-accent-primary px-1">acaso</span>. Vamos projetar a sua.
+              Marcas inesquecíveis não são coincidência. São o resultado de escolhas estratégicas.
             </p>
             
             <a href="mailto:contato@romanocompany.com.br" className="btn-premium group">
-               INICIAR PROJETO
+               VAMOS CONVERSAR
             </a>
           </div>
 
@@ -27,7 +27,6 @@ const FooterLaura = () => {
                 <span className="text-[10px] uppercase font-bold tracking-[0.3em] text-accent-primary">Social</span>
                 <a href="https://instagram.com/romanolaurah" className="font-header text-lg hover:text-main transition-colors block mix-blend-screen">Instagram</a>
                 <a href="https://behance.net/romanolaurah" className="font-header text-lg hover:text-main transition-colors block mix-blend-screen">Behance</a>
-                <a href="#" className="font-header text-lg hover:text-main transition-colors block mix-blend-screen">LinkedIn</a>
              </div>
              
              <div className="flex flex-col gap-4">
@@ -39,7 +38,7 @@ const FooterLaura = () => {
         </div>
 
         {/* Epic Typography Bottom */}
-        <div className="mt-auto border-t border-main/10 pt-12 relative">
+        <div className="mt-auto pt-12 relative">
            
            <motion.div 
              initial={{ y: 50, opacity: 0 }}
@@ -53,7 +52,7 @@ const FooterLaura = () => {
               
               <div className="text-right pb-4">
                  <p className="text-[10px] font-bold uppercase tracking-widest text-main/40 mb-2">© 2026 Todos os Direitos Reservados</p>
-                 <p className="text-[10px] font-bold uppercase tracking-widest text-main/40">Design By <a href="https://anotherlvl.com.br" className="text-accent-primary hover:text-main hover:underline">Gabriel Colares</a></p>
+                  <p className="text-[10px] font-bold uppercase tracking-widest text-main/40">Design & CRO by <a href="https://anotherlvl.com.br/" className="text-accent-primary hover:text-main hover:underline">Another Level</a></p>
               </div>
            </motion.div>
         </div>

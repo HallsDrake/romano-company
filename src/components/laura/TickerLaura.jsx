@@ -10,11 +10,11 @@ const TickerLaura = () => (
     >
       {[1, 2, 3, 4, 5, 6].map((_, i) => (
         <React.Fragment key={i}>
-          <span className="italic">estratégia com intenção</span>
+          <span className="italic">branding de alto valor</span>
           <span className="opacity-20 text-accent-primary">✤</span>
-          <span>fundação de marca</span>
+          <span>design com essência</span>
           <span className="opacity-20 text-accent-primary">✤</span>
-          <span className="italic">rigor lógico e visual</span>
+          <span className="italic">posicionamento premium</span>
           <span className="opacity-20 text-accent-primary">✤</span>
         </React.Fragment>
       ))}
