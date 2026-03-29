@@ -25,14 +25,14 @@ const AboutLaura = () => {
           initial={{ opacity: 0, x: 30 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, margin: "-100px" }}
-          className="flex flex-col justify-center"
+          className="flex flex-col justify-center items-center md:items-start text-center md:text-left"
         >
           <h2 className="text-display xl:text-epic font-header text-text-primary leading-[1] tracking-tighter mb-8 transition-all">
             Laura <br />
             <span className="font-serif italic text-accent-primary">Romano</span>
           </h2>
 
-          <div className="text-lg md:text-xl text-text-primary/80 font-body leading-relaxed space-y-6 max-w-xl">
+          <div className="text-lg md:text-xl text-text-primary/80 font-body leading-relaxed space-y-6 max-w-xl mx-auto md:mx-0">
             <p>
               Fundadora e mente estratégica por trás da Romano Company. Laura acredita que marcas históricas não são fruto do acaso, mas de uma fundação sólida onde estratégia e rigor visual caminham juntos.
             </p>
@@ -44,8 +44,8 @@ const AboutLaura = () => {
             </p>
           </div>
 
-          <div className="pt-10 mt-10">
-            <a href="#contato" className="btn-premium">
+          <div className="pt-10 mt-10 w-full md:w-auto">
+            <a href="#contato" className="btn-premium w-full md:w-auto flex items-center justify-center">
               INICIAR PROJETO
             </a>
           </div>

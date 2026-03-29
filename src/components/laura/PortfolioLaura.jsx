@@ -6,15 +6,16 @@ import { projects } from '../../data/projects';
 const PortfolioLaura = () => {
   return (
     <section id="portfolio" className="relative bg-main pb-0">
-      <div className="container-editorial pt-64 pb-24 relative overflow-hidden">
+      <div className="container-editorial pt-32 md:pt-64 pb-24 relative overflow-hidden">
+        {/* Background Text - Desktop Only */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 1.5, ease: "easeOut" }}
-          className="absolute top-20 left-0 whitespace-nowrap z-0 pointer-events-none select-none max-w-full overflow-hidden"
+          className="hidden md:block absolute top-20 left-0 whitespace-nowrap z-0 pointer-events-none select-none"
         >
-          <span className="text-[15vw] md:text-[20vw] font-header text-text-primary/10 leading-none uppercase tracking-tighter">
+          <span className="text-[20vw] font-header text-text-primary/10 leading-none uppercase tracking-tighter">
             nossos projetos
           </span>
         </motion.div>
@@ -23,12 +24,16 @@ const PortfolioLaura = () => {
            initial={{ opacity: 0, y: 20 }}
            whileInView={{ opacity: 1, y: 0 }}
            viewport={{ once: true }}
-           className="relative z-10 mb-12"
+           className="relative z-10 mb-12 flex flex-col items-center md:items-start text-center md:text-left"
         >
            <div className="w-12 h-0.5 bg-accent-primary mb-6" />
-           <p className="text-[10px] md:text-xs font-bold uppercase tracking-[0.3em] text-text-primary/30">
+           <p className="text-[10px] md:text-xs font-bold uppercase tracking-[0.3em] text-text-primary/30 mb-4">
              trabalhos selecionados
            </p>
+           {/* Detail header for mobile */}
+           <h2 className="md:hidden text-4xl sm:text-5xl font-header text-text-primary tracking-tighter uppercase mb-8">
+             Nossos <span className="font-serif italic text-accent-primary lowercase">Projetos</span>
+           </h2>
         </motion.div>
       </div>
 

@@ -48,7 +48,7 @@ const ServicosLaura = () => {
           <div className={`w-full min-h-screen flex flex-col ${service.reverse ? 'lg:flex-row-reverse' : 'lg:flex-row'} ${service.bgClass}`}>
 
             {/* Text Content Half */}
-            <div className="w-full lg:w-1/2 flex flex-col justify-center px-8 sm:px-12 lg:px-24 py-24 lg:py-32">
+            <div className="w-full lg:w-1/2 flex flex-col justify-center items-center lg:items-start text-center lg:text-left px-8 sm:px-12 lg:px-24 py-24 lg:py-32">
 
               <motion.span
                 initial={{ opacity: 0, y: 10 }}
@@ -63,9 +63,9 @@ const ServicosLaura = () => {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className={`text-6xl sm:text-7xl lg:text-[5.5rem] font-header font-bold tracking-tighter leading-[0.85] mb-8 ${service.textClass}`}
+                className={`text-5xl sm:text-7xl lg:text-[5.5rem] font-header font-bold tracking-tighter leading-[0.85] mb-8 ${service.textClass}`}
               >
-                {service.title} <span className="font-serif italic lowercase font-light tracking-normal text-[0.9em] opacity-90 ml-[-5px]">{service.highlight}</span>
+                {service.title} <span className="font-serif italic lowercase font-light tracking-normal text-[0.9em] opacity-90 block lg:inline lg:ml-[-5px]">{service.highlight}</span>
               </motion.h3>
 
               <motion.p
@@ -73,7 +73,7 @@ const ServicosLaura = () => {
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.2 }}
-                className={`text-lg font-body leading-relaxed max-w-md ${service.textClass} opacity-80 mb-12`}
+                className={`text-lg font-body leading-relaxed max-w-md ${service.textClass} opacity-80 mb-12 mx-auto lg:mx-0`}
               >
                 {service.description}
               </motion.p>
@@ -84,7 +84,7 @@ const ServicosLaura = () => {
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.3 }}
-                className={`border-t border-b py-8 flex flex-col gap-8 mb-12 ${service.borderClass}`}
+                className={`border-t border-b py-8 flex flex-col gap-8 mb-12 w-full ${service.borderClass}`}
               >
                 <div className={`text-[9px] uppercase font-bold tracking-[0.2em] opacity-50 ${service.textClass}`}>
                   O QUE ENTREGAMOS
@@ -104,14 +104,14 @@ const ServicosLaura = () => {
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.4 }}
-                className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-6"
+                className="flex flex-col sm:flex-row sm:justify-between items-center gap-8 w-full"
               >
                 <span className={`text-[10px] uppercase font-bold tracking-[0.2em] ${service.textClass} opacity-80`}>
                   {service.finalCTA}
                 </span>
                 <a
                   href="#contato"
-                  className={`py-4 px-8 text-[10px] uppercase font-bold tracking-widest transition-all duration-300 ${service.btnClass}`}
+                  className={`w-full sm:w-auto py-4 px-10 text-[10px] uppercase font-bold tracking-widest transition-all duration-300 ${service.btnClass}`}
                 >
                   Iniciar projeto ↗
                 </a>
