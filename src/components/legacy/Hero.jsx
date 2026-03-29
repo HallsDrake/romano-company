@@ -135,7 +135,7 @@ const Hero = () => {
             className="mt-8 flex flex-col items-center"
           >
             <img
-              src="/assets/Fotos.png"
+              src="/assets/Fotos.jpg"
               alt="Experts"
               className="w-full max-w-[160px] h-auto opacity-90"
             />

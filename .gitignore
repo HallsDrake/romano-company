@@ -33,3 +33,4 @@ brain/
 *implementation_plan.md*
 .vercel
 .env*.local
+assets_backup/

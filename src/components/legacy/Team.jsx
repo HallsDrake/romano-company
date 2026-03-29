@@ -25,7 +25,7 @@ const Team = () => {
         "Trouxe Sean Ellis (criador do Growth Hacking) ao Brasil pela primeira vez e continua atualizando o mercado com as principais tendências globais.",
         <>Como estrategista de CRO na <span className="text-blue-600 font-bold">Levers</span>, seu foco é garantir que o <span className="text-blue-600 font-bold">crescimento seja previsível e sustentável</span> por meio de infraestrutura de dados e experimentação.</>
       ],
-      image: "/assets/Ronei.png"
+      image: "/assets/Ronei.jpg"
     }
   ];
 
