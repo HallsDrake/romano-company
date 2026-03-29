@@ -12,9 +12,9 @@ const PortfolioLaura = () => {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 1.5, ease: "easeOut" }}
-          className="absolute top-20 left-0 whitespace-nowrap z-0 pointer-events-none select-none"
+          className="absolute top-20 left-0 whitespace-nowrap z-0 pointer-events-none select-none max-w-full overflow-hidden"
         >
-          <span className="text-[20vw] font-header text-text-primary/10 leading-none uppercase tracking-tighter">
+          <span className="text-[15vw] md:text-[20vw] font-header text-text-primary/10 leading-none uppercase tracking-tighter">
             nossos projetos
           </span>
         </motion.div>

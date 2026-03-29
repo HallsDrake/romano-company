@@ -20,7 +20,7 @@ const NavbarLaura = () => {
         initial={{ y: -50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-        className={`fixed top-0 left-0 w-full z-50 flex justify-between items-center transition-all duration-500 px-6 md:px-10 lg:px-16 bg-main ${scrolled ? 'py-4 border-b border-border-subtle shadow-sm' : 'py-8 border-b border-transparent'}`}
+        className={`fixed top-0 left-0 w-full z-50 flex justify-between items-center transition-all duration-500 px-6 md:px-10 lg:px-16 bg-main ${scrolled ? 'py-4 border-b border-border-subtle shadow-sm' : 'py-6 md:py-8 border-b border-transparent'}`}
       >
         {/* LOGO - Melhor pensada (Stylized text logo) */}
         <a
@@ -61,8 +61,8 @@ const NavbarLaura = () => {
           onClick={() => setMenuOpen(!menuOpen)}
           className="lg:hidden relative w-10 h-10 flex flex-col items-end justify-center gap-1.5 z-50"
         >
-          <span className={`block h-[2px] transition-all duration-300 ${menuOpen ? 'w-8 rotate-45 translate-y-[8px] bg-text-primary' : `w-8 ${scrolled ? 'bg-text-primary' : 'bg-main'}`}`} />
-          <span className={`block h-[2px] transition-all duration-300 ${menuOpen ? 'w-8 -rotate-45 -translate-y-[8px] bg-text-primary' : `w-6 ${scrolled ? 'bg-text-primary' : 'bg-main'}`}`} />
+          <span className={`block h-[2px] transition-all duration-300 ${menuOpen ? 'w-8 rotate-45 translate-y-[8px] bg-text-primary' : `w-8 ${scrolled ? 'bg-text-primary' : 'bg-text-primary'}`}`} />
+          <span className={`block h-[2px] transition-all duration-300 ${menuOpen ? 'w-8 -rotate-45 -translate-y-[8px] bg-text-primary' : `w-6 ${scrolled ? 'bg-text-primary' : 'bg-text-primary'}`}`} />
         </button>
       </motion.nav>
 

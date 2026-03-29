@@ -95,7 +95,7 @@ const Project = () => {
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="sticky top-32"
+            className="sticky top-32 text-center lg:text-left"
           >
             <h2 className="text-[10px] uppercase tracking-[0.4em] font-bold text-accent-primary mb-4">O Desafio</h2>
             <p className="font-serif italic text-3xl text-text-primary leading-tight">
@@ -108,6 +108,7 @@ const Project = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
+            className="text-center lg:text-left"
           >
             <p className="text-xl md:text-2xl text-text-secondary leading-relaxed font-light mb-8">
               {project.challenge || "Identificamos a necessidade de uma ruptura visual e estratégica para que a marca pudesse ocupar seu lugar de direito no topo do segmento premium."}
@@ -132,7 +133,7 @@ const Project = () => {
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="sticky top-32"
+            className="sticky top-32 text-center lg:text-left"
           >
             <h2 className="text-[10px] uppercase tracking-[0.4em] font-bold text-accent-primary mb-4">Estratégia</h2>
             <p className="font-serif italic text-3xl text-text-primary leading-tight">
@@ -145,6 +146,7 @@ const Project = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
+            className="text-center lg:text-left"
           >
             <p className="text-xl md:text-2xl text-text-secondary leading-relaxed font-light mb-12">
               {project.strategy || "Nossa abordagem focou em trazer elementos atemporais e uma tipografia que respira luxo, garantindo que cada ponto de contato da marca reforce sua nova autoridade."}
@@ -190,7 +192,7 @@ const Project = () => {
 
       {/* 8. RESULTS (30/70 SPLIT) */}
       <section className="py-24 md:py-40 container-editorial border-t border-border-subtle">
-        <div className="grid lg:grid-cols-[1fr_2fr] gap-12 md:gap-24 items-center">
+        <div className="grid lg:grid-cols-[1fr_2fr] gap-12 md:gap-24 items-center text-center lg:text-left">
           <h2 className="text-[10px] uppercase tracking-[0.4em] font-bold text-accent-primary">O Resultado</h2>
           <div>
             <p className="text-3xl md:text-5xl font-header uppercase tracking-tighter text-text-primary mb-6">
@@ -201,7 +203,7 @@ const Project = () => {
                 href={project.behanceUrl} 
                 target="_blank" 
                 rel="noreferrer" 
-                className="btn-premium inline-flex items-center gap-4 mt-8"
+                className="btn-premium flex items-center justify-center gap-4 mt-8 w-full lg:w-auto"
               >
                 VER PROJETO NO BEHANCE
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M7 7h10v10"/><path d="M17 7 7 17"/></svg>
