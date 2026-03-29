@@ -14,7 +14,7 @@ const AboutLaura = () => {
           className="w-full aspect-[4/5] object-cover"
         >
           <img
-            src="/assets/Fotos Laura/IMG_1158.jpg"
+            src="/assets/fotos-laura/img-1158.jpg"
             alt="Laura Romano - Romano Company"
             className="w-full h-full object-cover rounded-sm shadow-2xl"
           />
