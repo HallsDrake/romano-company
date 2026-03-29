@@ -13,8 +13,8 @@ const HeroLaura = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="max-w-[800px] md:max-w-[1000px] flex flex-col items-center md:items-start text-center md:text-left"
         >
-          <h1 className="text-[2.2rem] sm:text-5xl md:text-6xl lg:text-[3.8rem] xl:text-[4.2rem] font-header text-text-primary leading-[1.1] tracking-tighter mb-8 transition-all px-2 md:px-0">
-            Branding e design para negócios que já <span className="font-serif italic px-1 block sm:inline">entregam valor</span>, e precisam que o mundo veja isso. 
+          <h1 className="text-[2.1rem] sm:text-5xl md:text-6xl lg:text-[3.8rem] xl:text-[4.2rem] font-header text-text-primary leading-[1.1] tracking-tighter mb-8 transition-all px-4 md:px-0">
+            Branding e design para negócios que já <span className="font-serif italic px-1 block sm:inline whitespace-nowrap">entregam valor,</span> e precisam que o mundo veja isso. 
           </h1>
 
 

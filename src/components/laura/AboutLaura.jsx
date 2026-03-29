@@ -14,7 +14,7 @@ const AboutLaura = () => {
           className="w-full aspect-[4/5] object-cover"
         >
           <img
-            src="/assets/Fotos Laura/IMG_1158.JPG.jpeg"
+            src="/assets/Fotos Laura/IMG_1158.jpg"
             alt="Laura Romano - Romano Company"
             className="w-full h-full object-cover rounded-sm shadow-2xl"
           />
@@ -45,8 +45,11 @@ const AboutLaura = () => {
           </div>
 
           <div className="pt-10 mt-10 w-full md:w-auto">
-            <a href="#contato" className="btn-premium w-full md:w-auto flex items-center justify-center">
-              INICIAR PROJETO
+            <a href="#contato" className="py-4 px-10 text-[10px] uppercase font-bold tracking-[0.2em] rounded-[30px] btn-premium transition-all duration-300 hover:scale-105 shadow-xl text-center flex items-center justify-center gap-2">
+              VAMOS CONVERSAR
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M7 17L17 7" /><path d="M7 7h10v10" />
+              </svg>
             </a>
           </div>
         </motion.div>

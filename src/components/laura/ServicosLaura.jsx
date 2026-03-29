@@ -111,9 +111,12 @@ const ServicosLaura = () => {
                 </span>
                 <a
                   href="#contato"
-                  className={`w-full sm:w-auto py-4 px-10 text-[10px] uppercase font-bold tracking-widest transition-all duration-300 ${service.btnClass}`}
+                  className={`w-full sm:w-auto py-4 px-10 text-[10px] uppercase font-bold tracking-widest transition-all duration-300 flex items-center justify-center gap-2 ${service.btnClass}`}
                 >
-                  Iniciar projeto ↗
+                  VAMOS CONVERSAR
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M7 17L17 7" /><path d="M7 7h10v10" />
+                  </svg>
                 </a>
               </motion.div>
 
