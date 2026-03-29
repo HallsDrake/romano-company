@@ -5,14 +5,14 @@ const ASSETS_ROOT = 'public/assets/PROJETOS SITE ROMANO COMPANY';
 const PROJECTS_DATA_PATH = 'src/data/projects.js';
 
 function syncGallery() {
-    console.log('🚀 Starting Gallery Sync...');
-
+    console.log('🚀 Starting Robust Gallery Sync...');
+    
     if (!fs.existsSync(ASSETS_ROOT)) {
         console.error('❌ Assets root not found:', ASSETS_ROOT);
         return;
     }
 
-    const directories = fs.readdirSync(ASSETS_ROOT).filter(f =>
+    const directories = fs.readdirSync(ASSETS_ROOT).filter(f => 
         fs.statSync(path.join(ASSETS_ROOT, f)).isDirectory()
     );
 
@@ -20,23 +20,52 @@ function syncGallery() {
 
     directories.forEach(dir => {
         const fullPath = path.join(ASSETS_ROOT, dir);
-        const files = fs.readdirSync(fullPath)
-            .filter(f => f.endsWith('.jpg') || f.endsWith('.png') || f.endsWith('.webp'))
-            .filter(f => !f.toLowerCase().includes('capa') && !f.toLowerCase().includes('hero'))
-            .sort((a, b) => {
-                // Natural sort for numbers
-                return a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' });
-            });
+        const allFiles = fs.readdirSync(fullPath)
+            .filter(f => /\.(jpg|jpeg|png|webp)$/i.test(f));
+
+        // Detect vertical file (look for "VERTICAL" in filename)
+        const verticalFile = allFiles.find(f => f.toUpperCase().includes('VERTICAL'));
+        
+        console.log(`Checking folder: ${dir}`);
+        if (verticalFile) console.log(`   Found Vertical: ${verticalFile}`);
+
+        // Gallery files: exclude CAPA, HERO and VERTICAL
+        const galleryFiles = allFiles.filter(f => 
+            !f.toLowerCase().includes('capa') && 
+            !f.toLowerCase().includes('hero') && 
+            !f.toUpperCase().includes('VERTICAL')
+        );
+
+        const seenBases = new Set();
+        const uniqueGallery = [];
+
+        const prioritized = galleryFiles.sort((a, b) => {
+            const extA = path.extname(a).toLowerCase();
+            const extB = path.extname(b).toLowerCase();
+            if (extA === '.jpg' || extA === '.jpeg') return -1;
+            if (extB === '.jpg' || extB === '.jpeg') return 1;
+            return 0;
+        });
+
+        prioritized.forEach(f => {
+            const base = path.parse(f).name.toLowerCase();
+            if (!seenBases.has(base)) {
+                uniqueGallery.push(f);
+                seenBases.add(base);
+            }
+        });
+
+        uniqueGallery.sort((a, b) => a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' }));
 
         const projectPath = `/assets/PROJETOS SITE ROMANO COMPANY/${dir}`;
-        projectUpdates[dir] = files.map(f => `${projectPath}/${f}`);
+        projectUpdates[dir] = {
+            gallery: uniqueGallery.map(f => `${projectPath}/${f}`),
+            mobileImage: verticalFile ? `${projectPath}/${verticalFile}` : null
+        };
     });
 
-    // Read current projects.js
     let content = fs.readFileSync(PROJECTS_DATA_PATH, 'utf8');
 
-    // For each project in directories, we need to map it to the project ID in the code
-    // We can use a simple mapping or just look for the title/directory number
     const projectMap = {
         '1 - GRAND COFFEE HOUSE': 'grand-coffee',
         '2 - ROYALE GASTROBAR': 'royale',
@@ -50,16 +79,20 @@ function syncGallery() {
     };
 
     Object.entries(projectMap).forEach(([dirName, projectId]) => {
-        const galleryFiles = projectUpdates[dirName] || [];
-        const galleryString = JSON.stringify(galleryFiles, null, 6);
+        const update = projectUpdates[dirName] || { gallery: [], mobileImage: null };
+        console.log(`Updating ${projectId}: MobileImage = ${update.mobileImage}`);
+        
+        // Update gallery
+        const galleryRegex = new RegExp(`(id:\\s*"${projectId}"[\\s\\S]*?gallery:\\s*\\[)[\\s\\S]*?(\\])`, 'g');
+        content = content.replace(galleryRegex, `$1\n      ${update.gallery.map(f => `"${f}"`).join(',\n      ')}\n    $2`);
 
-        // Regex to find the gallery array for a specific project ID
-        const regex = new RegExp(`(id:\\s*"${projectId}"[\\s\\S]*?gallery:\\s*\\[)[\\s\\S]*?(\\])`, 'g');
-        content = content.replace(regex, `$1\n      ${galleryFiles.map(f => `"${f}"`).join(',\n      ')}\n    $2`);
+        // Update mobileImage
+        const mobileRegex = new RegExp(`(id:\\s*"${projectId}"[\\s\\S]*?mobileImage:\\s*)(?:".*?"|null)`, 'g');
+        content = content.replace(mobileRegex, `$1${update.mobileImage ? `"${update.mobileImage}"` : 'null'}`);
     });
 
     fs.writeFileSync(PROJECTS_DATA_PATH, content);
-    console.log('✅ projects.js updated successfully with all found assets!');
+    console.log('✅ projects.js updated successfully!');
 }
 
 syncGallery();
