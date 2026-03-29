@@ -31,3 +31,5 @@ brain/
 *task.md*
 *walkthrough.md*
 *implementation_plan.md*
+.vercel
+.env*.local

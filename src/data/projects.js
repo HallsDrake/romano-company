@@ -52,18 +52,19 @@ export const projects = [
   },
   {
     id: "aivora",
-    title: "AIVORA",
+    title: "AIVORA HOTEL & SPA",
     category: "Identidade Visual Hotel & Spa",
     image: "/assets/PROJETOS SITE ROMANO COMPANY/4 - AIVORA/1-CAPA.png",
     client: "Aivora Hotel & Spa",
-    description: "Uma experiência de conexão com a natureza, o tempo e o ser.",
-    challenge: "Traduzir a essência de um hotel boutique que busca oferecer mais do que uma estadia: uma verdadeira experiência de reconexão com a natureza, o tempo e o eu.",
-    strategy: "Desenvolvemos um branding estratégico que transforma hospitalidade em uma marca memorável, unindo uma atmosfera única a um design que flui com o ambiente.",
-    results: "Uma identidade visual que vai além da estética, criando o refúgio exclusivo e memorável que a experiência Aivora propõe.",
+    description: "Um refúgio exclusivo onde o tempo encontra o silêncio da alma.",
+    challenge: "O Aivora é um projeto que vai além da estética: ele traduz a essência de um hotel boutique que busca oferecer mais do que uma estadia: uma verdadeira experiência de reconexão com a natureza, o tempo e o eu. O desafio era transformar conceitos de hospitalidade em uma marca memorável e uma atmosfera única.",
+    strategy: "O símbolo nasce da fusão entre a folha e o vento, evocando o movimento da água e a imponência das montanhas. Unimos a elegância atemporal da tipografia CS Century nos títulos à fluidez da Darker Grotesque no corpo, equilibrada por uma paleta que une o Esmeralda (serenidade) ao Bordô (luxo).",
+    results: "Uma marca que convida a sentir, desacelerar e viver o presente. O projeto de identidade visual traduz sofisticação e experiências únicas, consolidando o Aivora como um refúgio de luxo silencioso onde natureza e requinte coexistem em perfeita harmonia.",
     gallery: [
       "/assets/PROJETOS SITE ROMANO COMPANY/4 - AIVORA/1.png",
       "/assets/PROJETOS SITE ROMANO COMPANY/4 - AIVORA/2.png",
-      "/assets/PROJETOS SITE ROMANO COMPANY/4 - AIVORA/3.png"
+      "/assets/PROJETOS SITE ROMANO COMPANY/4 - AIVORA/3.png",
+      "/assets/PROJETOS SITE ROMANO COMPANY/4 - AIVORA/1-CAPA.png"
     ]
   },
   {
