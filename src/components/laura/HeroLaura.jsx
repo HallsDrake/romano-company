@@ -14,12 +14,12 @@ const HeroLaura = () => {
           className="max-w-[800px] md:max-w-[1000px] flex flex-col items-center md:items-start text-center md:text-left"
         >
           <h1 className="text-[2.1rem] sm:text-5xl md:text-6xl lg:text-[3.8rem] xl:text-[4.2rem] font-header text-text-primary leading-[1.1] tracking-tighter mb-8 transition-all px-4 md:px-0">
-            Branding e design para negócios que já <span className="font-serif italic px-1 block sm:inline whitespace-nowrap">entregam valor,</span> e precisam que o mundo veja isso. 
+            O preço de ser só mais uma marca sem identidade é <span className="font-serif italic px-1 block sm:inline whitespace-nowrap">alto demais.</span> 
           </h1>
 
 
           <p className="text-base sm:text-xl lg:text-2xl text-text-primary/70 font-body font-medium tracking-tight leading-relaxed max-w-[600px] mb-12 px-4 md:px-0">
-            O preço de ser só mais uma marca sem identidade é alto demais<span className="text-accent-primary inline-block ml-2 w-1.5 h-1.5 rounded-full bg-accent-primary"></span>
+            Branding e design para negócios que já entregam valor, e precisam que o mundo veja isso<span className="text-accent-primary inline-block ml-2 w-1.5 h-1.5 rounded-full bg-accent-primary"></span>
           </p>
 
 
