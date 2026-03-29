@@ -110,13 +110,18 @@ const Project = () => {
         </div>
       </section>
 
-      {/* 4. FULL BLEED IMAGE 1 */}
+      {/* 4. FULL BLEED RESPONSIVE IMAGE */}
       <section className="w-full h-[80vh] overflow-hidden">
-        <img
-          src={project.gallery && project.gallery[0] ? project.gallery[0] : project.image}
-          className="w-full h-full object-cover"
-          alt="Detalhe do projeto"
-        />
+        <picture>
+          {project.mobileImage && (
+            <source media="(max-width: 768px)" srcSet={project.mobileImage} />
+          )}
+          <img 
+            src={project.gallery && project.gallery[0] ? project.gallery[0] : project.image} 
+            className="w-full h-full object-cover" 
+            alt="Detalhe do projeto"
+          />
+        </picture>
       </section>
 
       {/* 5. STRATEGY SECTION (30/70 SPLIT) */}
@@ -199,7 +204,7 @@ const Project = () => {
         <div className="grid lg:grid-cols-[1fr_2fr] gap-12 md:gap-24 items-center text-center lg:text-left">
           <h2 className="text-[10px] uppercase tracking-[0.4em] font-bold text-accent-primary">O Resultado</h2>
           <div>
-            <p className="text-3xl md:text-5xl font-header uppercase tracking-tighter text-text-primary mb-6">
+            <p className="text-3xl md:text-5xl font-header text-text-primary mb-6">
               {project.results || "Sucesso absoluto em posicionamento e conversão."}
             </p>
             {project.behanceUrl && (
