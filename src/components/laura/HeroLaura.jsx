@@ -49,7 +49,7 @@ const HeroLaura = () => {
           className="absolute inset-0 overflow-hidden"
         >
           <img
-            src="/assets/Fotos Laura/IMG_1160.JPG.jpeg"
+            src="/assets/Fotos Laura/IMG_1160.jpg"
             alt="Romano Company"
             className="w-full h-full object-cover object-[center_20%] translate-y-0"
           />
