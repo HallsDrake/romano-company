@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { projects } from '../data/projects';
 import NavbarLaura from '../components/laura/NavbarLaura';
 import FooterLaura from '../components/laura/FooterLaura';
-import ProjectCarousel from '../components/laura/ProjectCarousel';
+import ProjectCarousel from '../components/laura/ProjectCarousel.jsx';
 
 const Project = () => {
   const { id } = useParams();
@@ -169,14 +169,14 @@ const Project = () => {
       {/* 7. GALLERY GRID */}
       <section className="py-24 container-editorial">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
-          <div className="md:col-span-8 h-[400px] md:h-[600px]">
-             <img src={project.gallery && project.gallery[0] ? project.gallery[0] : project.image} className="w-full h-full object-cover" alt="Gallery 1" />
+          <div className="md:col-span-8 h-[400px] md:h-[600px] overflow-hidden">
+             <img src={(project.gallery && project.gallery[0]) || project.image} className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" alt="Curated Gallery 1" />
           </div>
           <div className="md:col-span-4 h-[400px] md:h-[600px] flex flex-col gap-8">
             <div className="h-1/2 w-full bg-border-subtle overflow-hidden">
-               <img src={project.gallery && project.gallery[1] ? project.gallery[1] : project.image} className="w-full h-full object-cover" alt="Gallery 2" />
+               <img src={(project.gallery && project.gallery[1]) || project.image} className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" alt="Curated Gallery 2" />
             </div>
-            <div className="h-1/2 w-full flex items-center justify-center border border-border-subtle p-12 text-center">
+            <div className="h-1/2 w-full flex items-center justify-center border border-border-subtle p-12 text-center bg-white/50">
                <p className="font-serif italic text-2xl text-text-secondary">A Romano Company eleva marcas ao status de ícone.</p>
             </div>
           </div>
@@ -186,6 +186,10 @@ const Project = () => {
       {/* 8. IMMERSIVE CAROUSEL - FULL COLLECTION */}
       <section className="py-24 bg-main overflow-hidden border-t border-border-subtle">
         <div className="container-editorial">
+           <div className="mb-12">
+              <h2 className="text-[10px] uppercase tracking-[0.4em] font-bold text-accent-primary mb-2">Imersão de Detalhes</h2>
+              <p className="font-header text-4xl uppercase tracking-tighter">Full Collection</p>
+           </div>
            <ProjectCarousel images={project.gallery} />
         </div>
       </section>
