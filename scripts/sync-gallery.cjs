@@ -6,13 +6,13 @@ const PROJECTS_DATA_PATH = 'src/data/projects.js';
 
 function syncGallery() {
     console.log('🚀 Starting Gallery Sync...');
-    
+
     if (!fs.existsSync(ASSETS_ROOT)) {
         console.error('❌ Assets root not found:', ASSETS_ROOT);
         return;
     }
 
-    const directories = fs.readdirSync(ASSETS_ROOT).filter(f => 
+    const directories = fs.readdirSync(ASSETS_ROOT).filter(f =>
         fs.statSync(path.join(ASSETS_ROOT, f)).isDirectory()
     );
 
@@ -21,7 +21,7 @@ function syncGallery() {
     directories.forEach(dir => {
         const fullPath = path.join(ASSETS_ROOT, dir);
         const files = fs.readdirSync(fullPath)
-            .filter(f => f.toLowerCase().endsWith('.jpg'))
+            .filter(f => f.endsWith('.jpg') || f.endsWith('.png') || f.endsWith('.webp'))
             .filter(f => !f.toLowerCase().includes('capa') && !f.toLowerCase().includes('hero'))
             .sort((a, b) => {
                 // Natural sort for numbers
@@ -52,7 +52,7 @@ function syncGallery() {
     Object.entries(projectMap).forEach(([dirName, projectId]) => {
         const galleryFiles = projectUpdates[dirName] || [];
         const galleryString = JSON.stringify(galleryFiles, null, 6);
-        
+
         // Regex to find the gallery array for a specific project ID
         const regex = new RegExp(`(id:\\s*"${projectId}"[\\s\\S]*?gallery:\\s*\\[)[\\s\\S]*?(\\])`, 'g');
         content = content.replace(regex, `$1\n      ${galleryFiles.map(f => `"${f}"`).join(',\n      ')}\n    $2`);

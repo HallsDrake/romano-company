@@ -4,7 +4,6 @@ import { motion } from 'framer-motion';
 import { projects } from '../data/projects';
 import NavbarLaura from '../components/laura/NavbarLaura';
 import FooterLaura from '../components/laura/FooterLaura';
-import ProjectCarousel from '../components/laura/ProjectCarousel';
 
 const Project = () => {
   const { id } = useParams();
@@ -34,15 +33,15 @@ const Project = () => {
           className="absolute inset-0 z-0"
         >
           <div className="absolute inset-0 bg-text-primary/60 z-10" />
-          <img 
-            src={project.image} 
-            alt={project.title} 
+          <img
+            src={project.image}
+            alt={project.title}
             className="w-full h-full object-cover"
           />
         </motion.div>
 
         <div className="relative z-20 text-center max-w-5xl px-4">
-          <motion.h1 
+          <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.7, duration: 1 }}
@@ -52,7 +51,7 @@ const Project = () => {
           </motion.h1>
         </div>
 
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.5, duration: 1 }}
@@ -95,7 +94,7 @@ const Project = () => {
               Reinventando a percepção de valor.
             </p>
           </motion.div>
-          
+
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -112,9 +111,9 @@ const Project = () => {
 
       {/* 4. FULL BLEED IMAGE 1 */}
       <section className="w-full h-[80vh] overflow-hidden">
-        <img 
-          src={project.gallery && project.gallery[0] ? project.gallery[0] : project.image} 
-          className="w-full h-full object-cover" 
+        <img
+          src={project.gallery && project.gallery[0] ? project.gallery[0] : project.image}
+          className="w-full h-full object-cover"
           alt="Detalhe do projeto"
         />
       </section>
@@ -133,7 +132,7 @@ const Project = () => {
               Design que comunica poder.
             </p>
           </motion.div>
-          
+
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -155,7 +154,7 @@ const Project = () => {
       {/* 6. RESPIRO SECTION */}
       <section className="bg-accent-primary py-32 px-6 text-center text-main">
         <div className="max-w-4xl mx-auto">
-          <motion.p 
+          <motion.p
             initial={{ scale: 0.9, opacity: 0 }}
             whileInView={{ scale: 1, opacity: 1 }}
             viewport={{ once: true }}
@@ -166,9 +165,21 @@ const Project = () => {
         </div>
       </section>
 
-      {/* 7. GALLERY CAROUSEL */}
-      <section className="py-24 container-editorial overflow-hidden">
-        <ProjectCarousel images={project.gallery} />
+      {/* 7. GALLERY GRID */}
+      <section className="py-24 container-editorial">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
+          <div className="md:col-span-8 h-[600px]">
+            <img src={project.gallery && project.gallery[3] ? project.gallery[3] : project.image} className="w-full h-full object-cover" alt="Gallery 3" />
+          </div>
+          <div className="md:col-span-4 h-[600px] flex flex-col gap-8">
+            <div className="h-1/2 w-full bg-border-subtle overflow-hidden">
+              <img src={project.image} className="w-full h-full object-cover" alt="Gallery 4" />
+            </div>
+            <div className="h-1/2 w-full flex items-center justify-center border border-border-subtle p-12 text-center">
+              <p className="font-serif italic text-2xl text-text-secondary">A Romano Company eleva marcas ao status de ícone.</p>
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* 8. RESULTS (30/70 SPLIT) */}
@@ -180,14 +191,14 @@ const Project = () => {
               {project.results || "Sucesso absoluto em posicionamento e conversão."}
             </p>
             {project.behanceUrl && (
-              <a 
-                href={project.behanceUrl} 
-                target="_blank" 
-                rel="noreferrer" 
+              <a
+                href={project.behanceUrl}
+                target="_blank"
+                rel="noreferrer"
                 className="btn-premium flex items-center justify-center gap-4 mt-8 w-full lg:w-auto"
               >
                 VER PROJETO NO BEHANCE
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M7 7h10v10"/><path d="M17 7 7 17"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M7 7h10v10" /><path d="M17 7 7 17" /></svg>
               </a>
             )}
           </div>
@@ -197,8 +208,8 @@ const Project = () => {
       {/* 9. NEXT PROJECT CTA */}
       <section className="py-24 md:py-32 bg-main text-center border-t border-border-subtle">
         <span className="text-[10px] uppercase tracking-widest font-bold text-text-secondary mb-4 block">Próximo Caso</span>
-        <Link 
-          to="/#portfolio" 
+        <Link
+          to="/#portfolio"
           className="text-3xl sm:text-5xl md:text-8xl font-header uppercase tracking-tighter hover:text-accent-primary transition-colors block px-4"
         >
           EXPLORAR PORTFÓLIO

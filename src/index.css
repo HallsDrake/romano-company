@@ -19,8 +19,8 @@
 @font-face {
   font-family: 'Halfre';
   src: url('/assets/Fontes/Halfre.woff2') format('woff2'),
-       url('/assets/Fontes/Halfre.woff') format('woff'),
-       url('/assets/Fontes/Halfre.ttf') format('truetype');
+    url('/assets/Fontes/Halfre.woff') format('woff'),
+    url('/assets/Fontes/Halfre.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -28,11 +28,14 @@
 
 :root {
   /* Restored Brand Palette - Brisa Reference */
-  --color-cream: #FFF4D2;      /* Main Background */
-  --color-teal: #00393C;       /* Sophisticated Accent / Primary Text */
-  --color-coral: #FF7B5B;      /* Contrast CTA Accent */
+  --color-cream: #FFF4D2;
+  /* Main Background */
+  --color-teal: #00393C;
+  /* Sophisticated Accent / Primary Text */
+  --color-coral: #FF7B5B;
+  /* Contrast CTA Accent */
   --color-white: #FFFFFF;
-  --color-border: rgba(0, 57, 60, 0.1); 
+  --color-border: rgba(0, 57, 60, 0.1);
 
   /* Design Tokens */
   --main-bg: var(--color-cream);
@@ -45,14 +48,14 @@
   /* Typography Scale */
   --font-header: 'Halfre', 'Outfit', sans-serif;
   --font-body: 'Albert Sans', sans-serif;
-  --font-detail: 'Pinyon Script', cursive; 
+  --font-detail: 'Pinyon Script', cursive;
 }
 
 @layer base {
   html {
     scroll-behavior: smooth;
   }
-  
+
   body {
     font-family: var(--font-body);
     background-color: var(--main-bg);
@@ -61,28 +64,18 @@
     -webkit-font-smoothing: antialiased;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-family: var(--font-header);
     font-weight: normal;
   }
 
   * {
     border-color: var(--border-subtle);
-  }
-
-  /* Custom Scrollbar */
-  ::-webkit-scrollbar {
-    width: 6px;
-  }
-  ::-webkit-scrollbar-track {
-    background: var(--main-bg);
-  }
-  ::-webkit-scrollbar-thumb {
-    background: var(--accent-primary);
-    border-radius: 10px;
-  }
-  ::-webkit-scrollbar-thumb:hover {
-    background: var(--text-primary);
   }
 }
 
@@ -91,7 +84,7 @@
     /* Temporarily disabled user preferred cleaner look, but we keep the class for fallback */
     background: transparent;
   }
-  
+
   .text-epic {
     font-size: clamp(4rem, 10vw, 10rem);
     line-height: 0.9;
@@ -126,6 +119,7 @@
 }
 
 @layer components {
+
   /* Ultra-minimal borderless button */
   .btn-editorial {
     display: inline-flex;
@@ -141,7 +135,7 @@
     position: relative;
     overflow: hidden;
   }
-  
+
   .btn-editorial::after {
     content: '';
     position: absolute;
@@ -154,12 +148,12 @@
     transform-origin: right;
     transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
   }
-  
+
   .btn-editorial:hover::after {
     transform: scaleX(1);
     transform-origin: left;
   }
-  
+
   .btn-premium {
     display: inline-flex;
     align-items: center;
@@ -176,7 +170,7 @@
     border: none;
     box-shadow: 0 4px 14px rgba(255, 123, 91, 0.25);
   }
-  
+
   .btn-premium:hover {
     transform: translateY(-2px);
     background-color: var(--text-primary);
