@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const AboutLaura = () => {
   return (
-    <section id="sobre" className="relative py-24 md:py-32 bg-main overflow-hidden border-t border-border-subtle">
+    <section id="sobre" className="relative py-24 md:py-32 bg-main overflow-hidden">
       <div className="container-editorial relative z-10 grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-24 items-center">
 
         {/* Left Hand Image Spread */}
@@ -39,7 +39,7 @@ const AboutLaura = () => {
             <p>
               Com um olhar arquitetônico para o branding, ela lidera o estúdio focada em transformar negócios em marcas que não apenas ocupam espaço, mas que lideram mercados. Para Laura, a identidade visual é a tradução tangível de uma inteligência estruturada que gera reconhecimento imediato e valor de longo prazo.
             </p>
-            <p className="text-[10px] md:text-xs uppercase tracking-[0.2em] font-bold text-text-primary mt-8 pt-4 border-t border-border-subtle inline-block">
+            <p className="text-[10px] md:text-xs uppercase tracking-[0.2em] font-bold text-text-primary mt-8 pt-4 inline-block">
               Intencionalidade em cada traço.
             </p>
           </div>

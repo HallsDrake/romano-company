@@ -5,7 +5,7 @@ import { projects } from '../../data/projects';
 
 const PortfolioLaura = () => {
   return (
-    <section id="portfolio" className="relative bg-main pb-0 border-t border-border-subtle">
+    <section id="portfolio" className="relative bg-main pb-0 border-none">
       <div className="container-editorial pt-16 pb-0 relative overflow-hidden">
 
 
@@ -29,7 +29,7 @@ const PortfolioLaura = () => {
           <Link
             key={project.id}
             to={`/projeto/${project.id}`}
-            className="group block relative aspect-video overflow-hidden bg-main border-[0.5px] border-text-primary/10"
+            className="group block relative aspect-video overflow-hidden bg-main"
           >
             <motion.img
               initial={{ opacity: 0 }}

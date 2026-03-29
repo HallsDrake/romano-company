@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const ValuePropLaura = () => {
   return (
-    <section id="sobre" className="relative py-32 md:py-56 bg-text-primary text-main overflow-hidden border-y border-main/5 lowercase">
+    <section id="sobre" className="relative py-32 md:py-56 bg-text-primary text-main overflow-hidden lowercase">
       <div className="container-editorial">
         <div className="max-w-[1100px] mx-auto text-center">
             
@@ -22,7 +22,7 @@ const ValuePropLaura = () => {
               </h3>
             </motion.div>
 
-            <div className="grid md:grid-cols-2 gap-16 md:gap-32 text-center md:text-left border-t border-main/10 pt-16 md:pt-32 items-start">
+            <div className="grid md:grid-cols-2 gap-16 md:gap-32 text-center md:text-left pt-16 md:pt-32 items-start">
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
