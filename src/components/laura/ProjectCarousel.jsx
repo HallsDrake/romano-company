@@ -7,27 +7,23 @@ const ProjectCarousel = ({ images }) => {
   const controls = useAnimation();
   const x = useMotionValue(0);
 
-  // Triple the images for a seamless loop
-  const loopImages = [...images, ...images, ...images];
+  // Use a smaller set for the loop (only double) to minimize confusion
+  const loopImages = [...images, ...images];
 
   useEffect(() => {
     if (carousel.current) {
-      // We only care about the width of ONE set of images
-      const singleSetWidth = carousel.current.scrollWidth / 3;
+      const singleSetWidth = carousel.current.scrollWidth / 2;
       setWidth(singleSetWidth);
-      
-      // Initial position to the middle set
-      x.set(-singleSetWidth);
-      
+      x.set(0);
       startAutoplay(singleSetWidth);
     }
   }, [images, controls, x]);
 
   const startAutoplay = (singleWidth) => {
     controls.start({
-      x: [x.get(), x.get() - singleWidth],
+      x: [0, -singleWidth],
       transition: {
-        duration: images.length * 6, // 6s per image
+        duration: images.length * 8, // Slower, more elegant
         ease: "linear",
         repeat: Infinity,
       }
@@ -39,27 +35,18 @@ const ProjectCarousel = ({ images }) => {
   };
 
   const handleDragEnd = (_, info) => {
-    // If the drag takes it out of the middle set range, reset it smoothly
     const currentX = x.get();
-    if (currentX > 0) {
-      x.set(currentX - width);
-    } else if (currentX < -width * 2) {
-      x.set(currentX + width);
-    }
+    // Keep it within bounds of the first set
+    if (currentX > 0) x.set(currentX - width);
+    if (currentX < -width) x.set(currentX + width);
     
-    // Resume autoplay after 1s of inactivity
-    setTimeout(() => startAutoplay(width), 1000);
+    setTimeout(() => startAutoplay(width), 2000); // 2s delay after drag
   };
 
   if (!images || images.length === 0) return null;
 
   return (
     <div className="w-full relative py-12 select-none group overflow-hidden">
-      <div className="flex items-center gap-4 mb-8 px-4 md:px-0 opacity-40">
-        <span className="text-[9px] uppercase tracking-[0.3em] font-bold">Autoplay / Infinite Collection</span>
-        <div className="w-12 h-[1px] bg-text-primary" />
-      </div>
-
       <motion.div 
         ref={carousel}
         className="cursor-grab active:cursor-grabbing"
@@ -82,9 +69,9 @@ const ProjectCarousel = ({ images }) => {
             >
               <img 
                 src={img} 
-                alt={`Gallery image ${index + 1}`}
+                alt="Detalhe do projeto"
                 className="w-full h-full object-cover pointer-events-none"
-                loading={index > images.length && index < images.length * 2 ? "eager" : "lazy"}
+                loading="lazy"
               />
             </motion.div>
           ))}
@@ -94,8 +81,9 @@ const ProjectCarousel = ({ images }) => {
       <div className="flex justify-between items-center mt-10 px-4 md:px-0 opacity-40 group-hover:opacity-100 transition-opacity">
          <div className="flex items-center gap-4">
             <span className="text-[9px] uppercase tracking-[0.3em] font-bold">Arraste para explorar</span>
+            <div className="w-12 h-[1px] bg-text-primary" />
          </div>
-         <span className="text-[9px] uppercase tracking-[0.3em] font-bold">{images.length} DETALHES EXCLUSIVOS</span>
+         <span className="text-[9px] uppercase tracking-[0.3em] font-bold">{images.length} DETALHES</span>
       </div>
     </div>
   );
