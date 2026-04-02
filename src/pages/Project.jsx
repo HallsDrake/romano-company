@@ -5,6 +5,7 @@ import { projects } from '../data/projects';
 import NavbarLaura from '../components/laura/NavbarLaura';
 import FooterLaura from '../components/laura/FooterLaura';
 import ProjectCarousel from '../components/laura/ProjectCarousel.jsx';
+import WhatsAppFloating from '../components/laura/WhatsAppFloating';
 
 const Project = () => {
   const { id } = useParams();
@@ -234,6 +235,7 @@ const Project = () => {
       </section>
 
       <FooterLaura />
+      <WhatsAppFloating />
     </div>
   );
 };

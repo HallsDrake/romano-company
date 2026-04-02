@@ -45,7 +45,12 @@ const AboutLaura = () => {
           </div>
 
           <div className="pt-10 mt-10 w-full md:w-auto">
-            <a href="#contato" className="py-4 px-10 text-[10px] uppercase font-bold tracking-[0.2em] rounded-[30px] btn-premium transition-all duration-300 hover:scale-105 shadow-xl text-center flex items-center justify-center gap-2">
+            <a
+              href="https://wa.me/5511998984313?text=Oi%20Laura!%20Tudo%20bem%3F%20Vi%20o%20site%20da%20Romano%20e%20amei%20o%20seu%20trabalho.%20Quero%20levar%20minha%20marca%20para%20o%20pr%C3%B3ximo%20n%C3%ADvel%20com%20voc%C3%AA%2C%20podemos%20conversar%3F"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="py-4 px-10 text-[10px] uppercase font-bold tracking-[0.2em] rounded-[30px] btn-premium transition-all duration-300 hover:scale-105 shadow-xl text-center flex items-center justify-center gap-2"
+            >
               VAMOS CONVERSAR
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M7 17L17 7" /><path d="M7 7h10v10" />

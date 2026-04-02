@@ -6,6 +6,7 @@ import ServicosLaura from '../components/laura/ServicosLaura';
 import ValuePropLaura from '../components/laura/ValuePropLaura';
 import AboutLaura from '../components/laura/AboutLaura';
 import FooterLaura from '../components/laura/FooterLaura';
+import WhatsAppFloating from '../components/laura/WhatsAppFloating';
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
         <AboutLaura />
       </main>
       <FooterLaura />
+      <WhatsAppFloating />
     </div>
   );
 };
