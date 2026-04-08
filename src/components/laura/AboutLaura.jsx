@@ -27,20 +27,17 @@ const AboutLaura = () => {
           viewport={{ once: true, margin: "-100px" }}
           className="flex flex-col justify-center items-center md:items-start text-center md:text-left"
         >
-          <h2 className="text-display xl:text-epic font-header text-text-primary leading-[1] tracking-tighter mb-8 transition-all">
+          <h2 className="text-display xl:text-epic font-header font-bold tracking-tight text-text-primary mb-8 transition-all" style={{ lineHeight: '0.85' }}>
             Laura <br />
-            <span className="font-serif italic text-accent-primary">Romano</span>
+            <span className="font-serif italic font-light text-accent-primary opacity-90 block">Romano</span>
           </h2>
 
           <div className="text-lg md:text-xl text-text-primary/80 font-body leading-relaxed space-y-6 max-w-xl mx-auto md:mx-0">
             <p>
-              Fundadora e mente estratégica por trás da Romano Company. Laura acredita que marcas históricas não são fruto do acaso, mas de uma fundação sólida onde estratégia e rigor visual caminham juntos.
+              Fundei a Romano Company porque via negócios incríveis sendo subvalorizados por uma marca que não os representava. Cinco anos e mais de 300 projetos depois, continuo com a mesma convicção: estratégia e visual juntos são o que fazem uma marca parar de parecer amadora e começar a ser percebida com o valor que entrega.
             </p>
             <p>
-              Com um olhar arquitetônico para o branding, ela lidera o estúdio focada em transformar negócios em marcas que não apenas ocupam espaço, mas que lideram mercados. Para Laura, a identidade visual é a tradução tangível de uma inteligência estruturada que gera reconhecimento imediato e valor de longo prazo.
-            </p>
-            <p className="text-[10px] md:text-xs uppercase tracking-[0.2em] font-bold text-text-primary mt-8 pt-4 inline-block">
-              Intencionalidade em cada traço.
+              Tem marcas que você olha uma vez e lembra pra sempre. E tem marcas que somem no meio do barulho, mesmo sendo boas no que fazem. O meu trabalho é garantir que a sua esteja no primeiro grupo. Estratégia e visual juntos, desde o início. Bora junto(a)s?
             </p>
           </div>
 

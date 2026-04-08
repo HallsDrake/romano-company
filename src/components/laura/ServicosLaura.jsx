@@ -8,9 +8,9 @@ const services = [
     label: "A MAIORIA DAS MARCAS EXISTE. POUCAS SÃO RECONHECIDAS.",
     description: "Nosso trabalho é fazer o seu negócio ocupar o lugar certo na cabeça de quem importa, com posicionamento, tom de voz e propósito que fazem sentido de verdade.",
     deliverables: [
-      { name: "Posicionamento que ocupa lugar.", benefit: "A gente descobre onde sua marca tem mais força, e constrói a partir daí. Sem achismo, sem copiar concorrente. Só o que faz sentido pro seu negócio e pra quem você quer atrair." },
-      { name: "Uma base que alinha tudo.", benefit: "Propósito, valores, mensagem. O tipo de clareza que faz seu time parar de improvisar e sua marca parar de parecer diferente dependendo de quem está na frente." },
-      { name: "Tom de voz que soa como você.", benefit: "Não é um manual que ninguém lê. É uma voz que qualquer pessoa do seu time consegue usar, e que o seu cliente reconhece antes mesmo de ver o seu nome." }
+      { name: "Posicionamento que ocupa um lugar claro", benefit: "A gente descobre onde sua marca tem mais força, e constrói a partir daí. Sem achismo, sem copiar concorrente. Só o que faz sentido pro seu negócio e pra quem você quer atrair." },
+      { name: "Uma base que alinha tudo", benefit: "Propósito, valores, mensagem e nada no improviso, aqui a gente garante que tudo esteja alinhado." },
+      { name: "Tom de voz que soa como você.", benefit: "Não é um manual bonito que ninguém vai ler. É a diferença entre uma marca que qualquer um poderia ter criado e uma que só poderia ser a sua." }
     ],
     bgClass: "bg-main",
     textClass: "text-text-primary",
@@ -26,8 +26,8 @@ const services = [
     label: "RECONHECIMENTO REAL",
     description: "A identidade visual é a essência da sua marca traduzida de forma visual. Não é sobre ser bonito. É sobre ser reconhecido na hora certa, pelo motivo certo, de um jeito que só a sua marca consegue ser.",
     deliverables: [
-      { name: "Uma marca que as pessoas lembram.", benefit: "Seu logo, suas cores, sua tipografia, tudo pensado pra criar reconhecimento real. O tipo de identidade que faz o cliente lembrar de você antes de precisar te procurar." },
-      { name: "Consistência que gera confiança.", benefit: "Quando sua marca aparece igual em todo lugar — no feed, no site, na proposta — ela para de parecer amadora e começa a parecer estabelecida. Isso não é detalhe. É o que fecha venda." },
+      { name: "Uma marca que as pessoas lembram.", benefit: "Seu logo, suas cores, sua tipografia e todo o universo da sua marca traduzido e pensado pra criar uma identidade que gruda. Sabe aquela marca que você lembra sem esforço? É isso que a gente constrói." },
+      { name: "Consistência que gera confiança.", benefit: "A inconsistência é silenciosa, mas o cliente sente. Uma marca que aparece igual em todo lugar transmite algo que nenhum copy consegue: credibilidade." },
       { name: "A sensação de que sua marca chegou.", benefit: "Tem um momento em que o cliente olha pra marca e pensa: isso representa de verdade o que a gente é. É esse sentimento que a gente trabalha pra entregar." }
     ],
     bgClass: "bg-text-primary",
@@ -63,9 +63,9 @@ const ServicosLaura = () => {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className={`text-5xl sm:text-7xl lg:text-[5.5rem] font-header font-bold tracking-tighter leading-[0.85] mb-8 ${service.textClass}`}
+                className={`text-5xl sm:text-7xl lg:text-[5.5rem] font-header font-bold tracking-tight leading-[0.85] mb-8 ${service.textClass}`}
               >
-                {service.title} <span className="font-serif italic lowercase font-light tracking-normal text-[0.9em] opacity-90 block lg:inline lg:ml-[-5px]">{service.highlight}</span>
+                {service.title} <span className="font-serif italic lowercase font-light tracking-tight text-[0.9em] opacity-90 block lg:inline lg:ml-[-5px]">{service.highlight}</span>
               </motion.h3>
 
               <motion.p

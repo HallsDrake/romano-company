@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const ValuePropLaura = () => {
   return (
-    <section id="sobre" className="relative py-32 md:py-56 bg-text-primary text-main overflow-hidden lowercase">
+    <section id="sobre" className="relative py-32 md:py-56 bg-text-primary text-main overflow-hidden">
       <div className="container-editorial">
         <div className="max-w-[1100px] mx-auto text-center">
             
@@ -18,10 +18,10 @@ const ValuePropLaura = () => {
               </h2>
               
               <h3 className="text-4xl md:text-6xl lg:text-7xl font-header text-main leading-[0.95] tracking-tighter mb-16 md:mb-32 px-4 md:px-0">
-                Num mercado cheio de marcas mornas e iguais, <span className="font-serif italic px-2">ser reconhecido</span> é o que torna a sua marca única.
+                Num mercado cheio de marcas mornas e iguais, <span className="font-serif italic px-2 text-[#ff7b5b]">ser reconhecido</span> é o que torna a sua marca única.
               </h3>
             </motion.div>
-
+ 
             <div className="grid md:grid-cols-2 gap-16 md:gap-32 text-center md:text-left pt-16 md:pt-32 items-start">
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
@@ -38,8 +38,12 @@ const ValuePropLaura = () => {
                 </p>
                 
                 <div className="pt-12 w-full md:w-auto">
-                   <a href="#portfolio" className="btn-editorial text-main text-[10px] hover:text-accent-primary after:bg-accent-primary lowercase w-full md:w-auto flex items-center justify-center md:block">
-                    explore o portfólio
+                   <a href="#portfolio" className="btn-editorial text-main text-[10px] tracking-[0.1em] font-bold hover:text-accent-primary after:bg-accent-primary w-full md:w-auto flex items-center justify-center md:justify-start gap-4 uppercase group">
+                    QUERO UMA MARCA MEMORÁVEL
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="group-hover:translate-x-2 transition-transform">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
                    </a>
                 </div>
               </motion.div>
