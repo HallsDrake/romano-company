@@ -110,7 +110,7 @@ const ServicosLaura = () => {
                   {service.finalCTA}
                 </span>
                 <a
-                  href="https://wa.me/5511998984313?text=Oi%20Laura!%20Tudo%20bem%3F%20Vi%20o%20site%20da%20Romano%20e%20amei%20o%20seu%20trabalho.%20Quero%20levar%20minha%20marca%20para%20o%20pr%C3%B3ximo%20n%C3%ADvel%20com%20voc%C3%AA%2C%20podemos%20conversar%3F"
+                  href="https://wa.me/5511998984313?text=Oi%20Laura%2C%20vim%20do%20site.%20Quero%20levar%20minha%20marca%20para%20o%20pr%C3%B3ximo%20n%C3%ADvel%20com%20voc%C3%AA.%20Podemos%20conversar%3F"
                   target="_blank"
                   rel="noopener noreferrer"
                   className={`w-full sm:w-auto py-4 px-10 text-[10px] uppercase font-bold tracking-widest transition-all duration-300 flex items-center justify-center gap-2 ${service.btnClass}`}

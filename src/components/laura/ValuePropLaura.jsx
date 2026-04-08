@@ -22,7 +22,7 @@ const ValuePropLaura = () => {
               </h3>
             </motion.div>
  
-            <div className="grid md:grid-cols-2 gap-16 md:gap-32 text-center md:text-left pt-16 md:pt-32 items-start">
+            <div className="grid md:grid-cols-2 gap-16 md:gap-24 text-center md:text-left pt-16 md:pt-32 items-center">
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -46,6 +46,26 @@ const ValuePropLaura = () => {
                     </svg>
                    </a>
                 </div>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, scale: 0.95 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 1, delay: 0.3 }}
+                className="relative group"
+              >
+                <div className="aspect-[4/5] overflow-hidden rounded-sm relative z-10 shadow-2xl">
+                  <img 
+                    src="/assets/fotos-laura/IMG_3283.PNG" 
+                    alt="Laura Romano - Manifesto" 
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-text-primary/10 group-hover:bg-transparent transition-colors duration-500" />
+                </div>
+                {/* Accent element behind image */}
+                <div className="absolute -top-4 -right-4 w-24 h-24 border-t border-r border-accent-primary/30 z-0" />
+                <div className="absolute -bottom-4 -left-4 w-24 h-24 border-b border-l border-accent-primary/30 z-0" />
               </motion.div>
             </div>
             

@@ -40,7 +40,7 @@ const NavbarLaura = () => {
 
           <div className={`flex gap-10 ${scrolled ? 'text-text-primary/70' : 'text-text-primary'}`}>
             <a href="/#sobre" className="hover:text-accent-primary transition-colors">Manifesto</a>
-            <a href="https://wa.me/5511998984313?text=Oi%20Laura!%20Tudo%20bem%3F%20Vi%20o%20site%20da%20Romano%20e%20amei%20o%20seu%20trabalho.%20Quero%20levar%20minha%20marca%20para%20o%20pr%C3%B3ximo%20n%C3%ADvel%20com%20voc%C3%AA%2C%20podemos%20conversar%3F" target="_blank" rel="noopener noreferrer" className="hover:text-accent-primary transition-colors">Contato</a>
+            <a href="https://wa.me/5511998984313?text=Oi%20Laura%2C%20vim%20do%20site.%20Quero%20levar%20minha%20marca%20para%20o%20pr%C3%B3ximo%20n%C3%ADvel%20com%20voc%C3%AA.%20Podemos%20conversar%3F" target="_blank" rel="noopener noreferrer" className="hover:text-accent-primary transition-colors">Contato</a>
           </div>
         </div>
 
@@ -51,7 +51,7 @@ const NavbarLaura = () => {
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5" /><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" /><line x1="17.5" x2="17.51" y1="6.5" y2="6.5" /></svg>
           </a>
 
-          <a href="https://wa.me/5511998984313?text=Oi%20Laura!%20Tudo%20bem%3F%20Vi%20o%20site%20da%20Romano%20e%20amei%20o%20seu%20trabalho.%20Quero%20levar%20minha%20marca%20para%20o%20pr%C3%B3ximo%20n%C3%ADvel%20com%20voc%C3%AA%2C%20podemos%20conversar%3F" target="_blank" rel="noopener noreferrer" className={`py-2.5 px-6 text-[9px] uppercase font-bold tracking-[0.2em] rounded-[30px] transition-all duration-300 ${scrolled ? 'btn-premium' : 'btn-premium shadow-2xl hover:scale-105'}`}>
+          <a href="https://wa.me/5511998984313?text=Oi%20Laura%2C%20vim%20do%20site.%20Quero%20levar%20minha%20marca%20para%20o%20pr%C3%B3ximo%20n%C3%ADvel%20com%20voc%C3%AA.%20Podemos%20conversar%3F" target="_blank" rel="noopener noreferrer" className={`py-2.5 px-6 text-[9px] uppercase font-bold tracking-[0.2em] rounded-[30px] transition-all duration-300 ${scrolled ? 'btn-premium' : 'btn-premium shadow-2xl hover:scale-105'}`}>
             VAMOS CONVERSAR
           </a>
         </div>
@@ -93,7 +93,7 @@ const NavbarLaura = () => {
                 </a>
               </li>
               <li className="overflow-hidden">
-                <a href="https://wa.me/5511998984313?text=Oi%20Laura!%20Tudo%20bem%3F%20Vi%20o%20site%20da%20Romano%20e%20amei%20o%20seu%20trabalho.%20Quero%20levar%20minha%20marca%20para%20o%20pr%C3%B3ximo%20n%C3%ADvel%20com%20voc%C3%AA%2C%20podemos%20conversar%3F" target="_blank" rel="noopener noreferrer" onClick={() => setMenuOpen(false)} className="text-4xl font-header font-bold text-text-primary hover:text-accent-primary transition-colors block">
+                <a href="https://wa.me/5511998984313?text=Oi%20Laura%2C%20vim%20do%20site.%20Quero%20levar%20minha%20marca%20para%20o%20pr%C3%B3ximo%20n%C3%ADvel%20com%20voc%C3%AA.%20Podemos%20conversar%3F" target="_blank" rel="noopener noreferrer" onClick={() => setMenuOpen(false)} className="text-4xl font-header font-bold text-text-primary hover:text-accent-primary transition-colors block">
                   Contato
                 </a>
               </li>
@@ -105,7 +105,7 @@ const NavbarLaura = () => {
               transition={{ delay: 0.4 }}
               className="absolute bottom-10 left-10 right-10 flex flex-col gap-6 text-center border-t border-border-subtle pt-6"
             >
-              <a href="https://wa.me/5511998984313?text=Oi%20Laura!%20Tudo%20bem%3F%20Vi%20o%20site%20da%20Romano%20e%20amei%20o%20seu%20trabalho.%20Quero%20levar%20minha%20marca%20para%20o%20pr%C3%B3ximo%20n%C3%ADvel%20com%20voc%C3%AA%2C%20podemos%20conversar%3F" target="_blank" rel="noopener noreferrer" onClick={() => setMenuOpen(false)} className="btn-premium w-full flex items-center justify-center">
+              <a href="https://wa.me/5511998984313?text=Oi%20Laura%2C%20vim%20do%20site.%20Quero%20levar%20minha%20marca%20para%20o%20pr%C3%B3ximo%20n%C3%ADvel%20com%20voc%C3%AA.%20Podemos%20conversar%3F" target="_blank" rel="noopener noreferrer" onClick={() => setMenuOpen(false)} className="btn-premium w-full flex items-center justify-center">
                 VAMOS CONVERSAR
               </a>
               <a href="https://instagram.com/romanolaurah" className="text-[10px] uppercase tracking-widest font-bold text-text-secondary w-full">
